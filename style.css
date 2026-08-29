@@ -3319,46 +3319,127 @@ main,
     filter: none !important;
 }
 
+/* =========================================================
+   RANIVASTRA - PREMIUM EMPTY CART
+   ========================================================= */
+
+.woocommerce-cart .woocommerce {
+    width: 100%;
+}
+
+.woocommerce-cart .cart-empty {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto !important;
+    padding: 120px 20px 20px;
+    text-align: center;
+    border: 0 !important;
+    background: transparent !important;
+    color: var(--rv-text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1;
+}
+
+/* Remove WooCommerce default message styling */
+.woocommerce-cart .cart-empty::before {
+    display: none !important;
+}
+
+/* Continue Shopping */
+.woocommerce-cart .return-to-shop {
+    width: 100%;
+    margin: 28px 0 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+
+.woocommerce-cart .return-to-shop a.button {
+    position: relative;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 26px;
+
+    background: var(--rv-dark) !important;
+    color: #fff !important;
+
+    border: 1px solid var(--rv-dark) !important;
+    border-radius: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+
+    transition:
+        transform .35s cubic-bezier(.2,.65,.2,1),
+        background .35s ease,
+        border-color .35s ease;
+}
+
+/* Arrow */
+.woocommerce-cart .return-to-shop a.button::after {
+    content: "→";
+    margin-left: 12px;
+    transition: transform .35s cubic-bezier(.2,.65,.2,1);
+}
+
+/* Hover */
+.woocommerce-cart .return-to-shop a.button:hover {
+    background: var(--rv-accent) !important;
+    border-color: var(--rv-accent) !important;
+    color: #fff !important;
+    transform: translateY(-3px);
+}
+
+.woocommerce-cart .return-to-shop a.button:hover::after {
+    transform: translateX(5px);
+}
+
+/* Press */
+.woocommerce-cart .return-to-shop a.button:active {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   EMPTY CART - REMOVE WOOCOMMERCE RECOMMENDATIONS
+   ========================================================= */
+
+/*
+ * We don't want WooCommerce's default
+ * "You may be interested in..." / Cross-sells
+ * section on the empty cart.
+ */
+
+.woocommerce-cart .cross-sells {
+    display: none !important;
+}
+
 
 /* =========================================================
    EMPTY CART - MOBILE
    ========================================================= */
 
-@media (max-width: 1024px) {
-
-    .woocommerce-cart .cross-sells ul.products {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    }
-
-}
-
 @media (max-width: 767px) {
 
-    .woocommerce-cart .cross-sells {
-        margin-top: 65px;
+    .woocommerce-cart .cart-empty {
+        width: calc(100% - 28px);
+        padding: 80px 10px 15px;
+        font-size: clamp(36px, 11vw, 52px);
     }
 
-    .woocommerce-cart .cross-sells > h2 {
-        font-size: 34px;
-        margin-bottom: 22px;
+    .woocommerce-cart .return-to-shop {
+        margin-top: 24px !important;
     }
 
-    .woocommerce-cart .cross-sells ul.products {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-    }
-
-    .woocommerce-cart .cross-sells ul.products li.product .woocommerce-loop-product__title {
-        font-size: 13px;
-    }
-
-    .woocommerce-cart .cross-sells ul.products li.product .price {
-        font-size: 12px;
-    }
-
-    .woocommerce-cart .cross-sells ul.products li.product .button {
-        font-size: 9px;
-        letter-spacing: .08em;
+    .woocommerce-cart .return-to-shop a.button {
+        width: 100%;
+        max-width: 320px;
+        min-height: 50px;
     }
 
 }
