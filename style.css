@@ -3322,30 +3322,32 @@ main,
 /* =========================================================
    RANIVASTRA — PREMIUM EMPTY CART
    EMPTY CART + HORIZONTAL PRODUCT SHOWCASE
+   FINAL CLEAN VERSION
    ========================================================= */
 
-/* ---------------------------------------------------------
-   EMPTY CART AREA
-   --------------------------------------------------------- */
+
+/* =========================================================
+   EMPTY CART MESSAGE
+   ========================================================= */
 
 .woocommerce-cart .cart-empty {
     width: min(900px, calc(100% - 40px));
     margin: 0 auto !important;
     padding: 120px 20px 20px !important;
 
-    text-align: center;
+    text-align: center !important;
 
     border: 0 !important;
     background: transparent !important;
 
-    color: var(--rv-text);
+    color: var(--rv-text) !important;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, "Times New Roman", serif !important;
 
-    font-size: clamp(38px, 5vw, 64px);
-    line-height: 1;
+    font-size: clamp(38px, 5vw, 64px) !important;
+    line-height: 1 !important;
 
-    letter-spacing: -.035em;
+    letter-spacing: -.035em !important;
 }
 
 .woocommerce-cart .cart-empty::before {
@@ -3353,29 +3355,29 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   SHOP NOW BUTTON
-   --------------------------------------------------------- */
+/* =========================================================
+   CONTINUE SHOPPING
+   ========================================================= */
 
 .woocommerce-cart .return-to-shop {
-    width: 100%;
+    width: 100% !important;
+
     margin: 28px 0 0 !important;
     padding: 0 !important;
 
-    text-align: center;
+    text-align: center !important;
 }
 
 .woocommerce-cart .return-to-shop a.button {
 
-    position: relative;
-
     display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
 
-    min-height: 52px;
+    align-items: center !important;
+    justify-content: center !important;
 
-    padding: 0 25px;
+    min-height: 52px !important;
+
+    padding: 0 25px !important;
 
     background: var(--rv-dark) !important;
     color: #fff !important;
@@ -3383,60 +3385,54 @@ main,
     border: 1px solid var(--rv-dark) !important;
     border-radius: 0 !important;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 10px !important;
+    font-weight: 500 !important;
 
-    letter-spacing: .13em;
-    text-transform: uppercase;
+    letter-spacing: .13em !important;
+    text-transform: uppercase !important;
 
-    text-decoration: none;
+    text-decoration: none !important;
 
     box-shadow: none !important;
 
     transition:
         transform .4s cubic-bezier(.2,.65,.2,1),
         background .4s ease,
-        border-color .4s ease;
+        border-color .4s ease !important;
 }
-
-
-/* Arrow */
 
 .woocommerce-cart .return-to-shop a.button::after {
 
-    content: "→";
+    content: "→" !important;
 
-    margin-left: 12px;
+    margin-left: 12px !important;
 
     transition:
-        transform .4s cubic-bezier(.2,.65,.2,1);
+        transform .4s cubic-bezier(.2,.65,.2,1) !important;
 }
-
-
-/* Hover */
 
 .woocommerce-cart .return-to-shop a.button:hover {
 
     background: var(--rv-accent) !important;
+
     border-color: var(--rv-accent) !important;
 
     color: #fff !important;
 
-    transform: translateY(-3px);
-
-    box-shadow: none !important;
+    transform: translateY(-3px) !important;
 }
 
 .woocommerce-cart .return-to-shop a.button:hover::after {
-    transform: translateX(5px);
+
+    transform: translateX(5px) !important;
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    WOOCOMMERCE EMPTY CART BLOCK
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart .wc-block-cart__empty-cart__title {
 
@@ -3458,23 +3454,16 @@ main,
 }
 
 
-/* Hide unwanted empty-cart text spacing */
-
-.woocommerce-cart
-.wc-block-cart__empty-cart__title + p {
-
-    margin-top: 0 !important;
-}
-
-
 /* =========================================================
-   NEW IN STORE
-   HORIZONTAL SHOWCASE
+   NEW IN STORE — OUTER SECTION
    ========================================================= */
 
 .woocommerce-cart .wc-block-grid {
 
-    width: 100% !important;
+    width: min(
+        var(--rv-max, 1240px),
+        calc(100% - 48px)
+    ) !important;
 
     max-width: var(--rv-max, 1240px) !important;
 
@@ -3482,19 +3471,17 @@ main,
 
     padding: 0 !important;
 
-    overflow: hidden !important;
-
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 
-/* ---------------------------------------------------------
-   SECTION HEADING
-   --------------------------------------------------------- */
+/* =========================================================
+   NEW IN STORE — HEADING
+   ========================================================= */
 
 .woocommerce-cart .wc-block-grid__heading {
 
-    margin: 0 0 32px !important;
+    margin: 0 0 34px !important;
 
     padding: 0 !important;
 
@@ -3515,55 +3502,8 @@ main,
 
 
 /* =========================================================
-   RANIVASTRA — EMPTY CART PRODUCT CAROUSEL
-   FINAL VERSION
+   HORIZONTAL PRODUCT RAIL
    ========================================================= */
-
-
-/* ---------------------------------------------------------
-   CAROUSEL CONTAINER
-   --------------------------------------------------------- */
-
-.woocommerce-cart .wc-block-grid {
-
-    width: 100% !important;
-    max-width: var(--rv-max, 1240px) !important;
-
-    margin: 95px auto 110px !important;
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* ---------------------------------------------------------
-   SECTION HEADING
-   --------------------------------------------------------- */
-
-.woocommerce-cart .wc-block-grid__heading {
-
-    margin: 0 0 34px !important;
-    padding: 0 !important;
-
-    font-family: Georgia, "Times New Roman", serif !important;
-
-    font-size: clamp(32px, 4vw, 48px) !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.05 !important;
-
-    letter-spacing: -0.035em !important;
-
-    color: var(--rv-text) !important;
-
-    text-align: left !important;
-}
-
-
-/* ---------------------------------------------------------
-   HORIZONTAL PRODUCT TRACK
-   --------------------------------------------------------- */
 
 .woocommerce-cart .wc-block-grid__products {
 
@@ -3587,33 +3527,27 @@ main,
 
     list-style: none !important;
 
-    /* IMPORTANT — horizontal scrolling */
-
     overflow-x: auto !important;
 
     overflow-y: hidden !important;
 
-    -webkit-overflow-scrolling: touch;
-
-    /* Smooth dragging */
-
-    cursor: grab;
-
-    user-select: none;
-
-    -webkit-user-select: none;
-
-    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch !important;
 
     scrollbar-width: none !important;
+
+    cursor: grab !important;
+
+    user-select: none !important;
+
+    -webkit-user-select: none !important;
+
+    touch-action: pan-x !important;
 
     box-sizing: border-box !important;
 }
 
 
-/* ---------------------------------------------------------
-   HIDE SCROLLBAR
-   --------------------------------------------------------- */
+/* Chrome / Edge / Safari scrollbar */
 
 .woocommerce-cart .wc-block-grid__products::-webkit-scrollbar {
 
@@ -3625,9 +3559,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   DRAGGING STATE
-   --------------------------------------------------------- */
+/* =========================================================
+   DRAGGING
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__products.rv-is-dragging {
@@ -3638,9 +3572,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    PRODUCT CARD
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart .wc-block-grid__product {
 
@@ -3672,9 +3606,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    PRODUCT LINK
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__product-link {
@@ -3693,9 +3627,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    PRODUCT IMAGE
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__product-image {
@@ -3718,9 +3652,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   IMAGE
-   --------------------------------------------------------- */
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__product-image img {
@@ -3746,9 +3680,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    IMAGE HOVER
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__product:hover
@@ -3758,9 +3692,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    SALE BADGE
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__product-onsale {
@@ -3810,19 +3744,18 @@ main,
 }
 
 
-/* ---------------------------------------------------------
+/* =========================================================
    PRODUCT TITLE
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .woocommerce-cart
-.wc-block-grid__product
 .wc-block-grid__product-title {
 
     display: -webkit-box !important;
 
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2 !important;
 
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical !important;
 
     overflow: hidden !important;
 
@@ -3851,12 +3784,11 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   PRODUCT PRICE
-   --------------------------------------------------------- */
+/* =========================================================
+   PRICE
+   ========================================================= */
 
 .woocommerce-cart
-.wc-block-grid__product
 .wc-block-grid__product-price {
 
     min-height: 22px !important;
@@ -3880,12 +3812,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   OLD PRICE
-   --------------------------------------------------------- */
+/* OLD PRICE */
 
 .woocommerce-cart
-.wc-block-grid__product
 .wc-block-grid__product-price del {
 
     margin-right: 5px !important;
@@ -3894,12 +3823,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   CURRENT PRICE
-   --------------------------------------------------------- */
+/* CURRENT PRICE */
 
 .woocommerce-cart
-.wc-block-grid__product
 .wc-block-grid__product-price ins {
 
     color: var(--rv-text) !important;
@@ -3910,9 +3836,9 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   ADD TO CART AREA
-   --------------------------------------------------------- */
+/* =========================================================
+   ADD TO CART
+   ========================================================= */
 
 .woocommerce-cart
 .wc-block-grid__product-add-to-cart {
@@ -3927,9 +3853,7 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   BUTTON WRAPPER
-   --------------------------------------------------------- */
+/* BUTTON WRAPPER */
 
 .woocommerce-cart
 .wc-block-grid__product-add-to-cart
@@ -3943,9 +3867,7 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   ADD TO CART BUTTON
-   --------------------------------------------------------- */
+/* BUTTON */
 
 .woocommerce-cart
 .wc-block-grid__product-add-to-cart
@@ -4002,9 +3924,7 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   BUTTON ARROW
-   --------------------------------------------------------- */
+/* BUTTON ARROW */
 
 .woocommerce-cart
 .wc-block-grid__product-add-to-cart
@@ -4025,9 +3945,7 @@ main,
 }
 
 
-/* ---------------------------------------------------------
-   BUTTON HOVER
-   --------------------------------------------------------- */
+/* BUTTON HOVER */
 
 .woocommerce-cart
 .wc-block-grid__product-add-to-cart
@@ -4040,14 +3958,10 @@ main,
     border-color: var(--rv-dark) !important;
 
     transform: translateY(-2px) !important;
-
-    box-shadow: none !important;
 }
 
 
-/* ---------------------------------------------------------
-   ARROW HOVER
-   --------------------------------------------------------- */
+/* ARROW HOVER */
 
 .woocommerce-cart
 .wc-block-grid__product-add-to-cart
@@ -4096,23 +4010,19 @@ main,
 
 @media (max-width: 767px) {
 
-    /* Empty message */
-
     .woocommerce-cart .cart-empty {
 
         width: calc(100% - 28px) !important;
 
-        padding:
-            80px 10px 15px !important;
+        padding: 80px 10px 15px !important;
 
         font-size:
             clamp(36px, 11vw, 52px) !important;
     }
 
 
-    /* Continue shopping */
-
-    .woocommerce-cart .return-to-shop {
+    .woocommerce-cart
+    .return-to-shop {
 
         margin-top: 24px !important;
     }
@@ -4132,9 +4042,10 @@ main,
     }
 
 
-    /* Recommendation section */
+    .woocommerce-cart
+    .wc-block-grid {
 
-    .woocommerce-cart .wc-block-grid {
+        width: 100% !important;
 
         margin-top: 75px !important;
 
@@ -4145,8 +4056,6 @@ main,
         padding-right: 0 !important;
     }
 
-
-    /* Heading */
 
     .woocommerce-cart
     .wc-block-grid__heading {
@@ -4162,8 +4071,6 @@ main,
     }
 
 
-    /* Track */
-
     .woocommerce-cart
     .wc-block-grid__products {
 
@@ -4172,8 +4079,6 @@ main,
         padding-right: 18px !important;
     }
 
-
-    /* Cards */
 
     .woocommerce-cart
     .wc-block-grid__product {
@@ -4190,8 +4095,6 @@ main,
     }
 
 
-    /* Title */
-
     .woocommerce-cart
     .wc-block-grid__product-title {
 
@@ -4201,8 +4104,6 @@ main,
     }
 
 
-    /* Price */
-
     .woocommerce-cart
     .wc-block-grid__product-price {
 
@@ -4210,16 +4111,13 @@ main,
     }
 
 
-    /* Button */
-
     .woocommerce-cart
     .wc-block-grid__product-add-to-cart
     .wp-block-button__link {
 
         min-height: 43px !important;
 
-        padding:
-            0 11px !important;
+        padding: 0 11px !important;
 
         font-size: 8px !important;
 
@@ -4235,7 +4133,8 @@ main,
 
 @media (max-width: 560px) {
 
-    .woocommerce-cart .wc-block-grid {
+    .woocommerce-cart
+    .wc-block-grid {
 
         margin-top: 60px !important;
     }
@@ -4257,11 +4156,6 @@ main,
 
     .woocommerce-cart
     .wc-block-grid__product {
-
-        /*
-         * One large card + part of next card
-         * gives a premium carousel feel.
-         */
 
         flex: 0 0 78% !important;
 
@@ -4295,3 +4189,1543 @@ main,
     }
 
 }
+
+/* =========================================================
+   RANIVASTRA CART — NEW IN STORE CAROUSEL
+   FINAL OVERRIDE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid {
+    width: 100% !important;
+    max-width: 1240px !important;
+    margin: 90px auto 100px !important;
+    padding: 0 24px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Heading */
+
+.woocommerce-cart .wc-block-grid__heading {
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: clamp(34px, 4vw, 50px) !important;
+    font-weight: 500 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.035em !important;
+
+    text-align: left !important;
+}
+
+
+/* =========================================================
+   HORIZONTAL SCROLL AREA
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__products {
+
+    display: flex !important;
+
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+
+    gap: 20px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 0 15px !important;
+
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    list-style: none !important;
+
+    -webkit-overflow-scrolling: touch !important;
+
+    scrollbar-width: none !important;
+
+    cursor: grab !important;
+
+    user-select: none !important;
+    -webkit-user-select: none !important;
+
+    touch-action: pan-x !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Hide scrollbar */
+
+.woocommerce-cart .wc-block-grid__products::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+/* =========================================================
+   DESKTOP PRODUCT CARD WIDTH
+   4 CARDS VISIBLE + MORE CARDS HIDDEN TO THE RIGHT
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product {
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    flex: 0 0 calc((100% - 54px) / 4) !important;
+
+    width: calc((100% - 54px) / 4) !important;
+
+    max-width: calc((100% - 54px) / 4) !important;
+
+    min-width: calc((100% - 54px) / 4) !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+
+    text-align: left !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product-image {
+
+    position: relative !important;
+
+    width: 100% !important;
+    height: 380px !important;
+
+    margin: 0 0 16px !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #f3f0ed !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.woocommerce-cart .wc-block-grid__product-image img {
+
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    object-fit: cover !important;
+
+    transform: scale(1) !important;
+
+    transition:
+        transform 700ms cubic-bezier(.2,.65,.2,1) !important;
+
+    pointer-events: none !important;
+}
+
+
+.woocommerce-cart
+.wc-block-grid__product:hover
+.wc-block-grid__product-image img {
+
+    transform: scale(1.045) !important;
+}
+
+
+/* =========================================================
+   SALE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product-onsale {
+
+    position: absolute !important;
+
+    top: 12px !important;
+    left: 12px !important;
+
+    z-index: 5 !important;
+
+    margin: 0 !important;
+    padding: 7px 10px !important;
+
+    background: #fff !important;
+    color: #111 !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 9px !important;
+    font-weight: 600 !important;
+
+    letter-spacing: .12em !important;
+    line-height: 1 !important;
+
+    text-transform: uppercase !important;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product-title {
+
+    min-height: 40px !important;
+
+    margin: 0 0 7px !important;
+    padding: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 14px !important;
+    font-weight: 500 !important;
+
+    line-height: 1.4 !important;
+
+    color: var(--rv-text, #171717) !important;
+
+    text-align: left !important;
+}
+
+
+/* =========================================================
+   PRICE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product-price {
+
+    min-height: 22px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.5 !important;
+
+    color: var(--rv-muted, #777) !important;
+
+    text-align: left !important;
+}
+
+
+.woocommerce-cart .wc-block-grid__product-price del {
+    margin-right: 5px !important;
+    opacity: .55 !important;
+}
+
+
+.woocommerce-cart .wc-block-grid__product-price ins {
+
+    color: var(--rv-text, #171717) !important;
+
+    text-decoration: none !important;
+
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   ADD TO CART
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product-add-to-cart {
+
+    width: 100% !important;
+
+    margin: 14px 0 0 !important;
+    padding: 0 !important;
+}
+
+
+.woocommerce-cart
+.wc-block-grid__product-add-to-cart
+.wp-block-button {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.woocommerce-cart
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link {
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    width: 100% !important;
+    min-height: 46px !important;
+
+    margin: 0 !important;
+    padding: 0 14px 0 16px !important;
+
+    background: var(--rv-dark, #171717) !important;
+    color: #fff !important;
+
+    border: 1px solid var(--rv-dark, #171717) !important;
+    border-radius: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 10px !important;
+    font-weight: 600 !important;
+
+    letter-spacing: .12em !important;
+
+    text-transform: uppercase !important;
+
+    text-decoration: none !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+        background .35s ease,
+        color .35s ease,
+        transform .35s ease !important;
+}
+
+
+.woocommerce-cart
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link::after {
+
+    content: "→" !important;
+
+    font-size: 15px !important;
+
+    font-weight: 400 !important;
+
+    transition: transform .35s ease !important;
+}
+
+
+.woocommerce-cart
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link:hover {
+
+    background: transparent !important;
+
+    color: var(--rv-dark, #171717) !important;
+
+    transform: translateY(-2px) !important;
+}
+
+
+.woocommerce-cart
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link:hover::after {
+
+    transform: translateX(5px) !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .woocommerce-cart .wc-block-grid {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .woocommerce-cart .wc-block-grid__product {
+
+        flex-basis: 280px !important;
+
+        width: 280px !important;
+
+        max-width: 280px !important;
+
+        min-width: 280px !important;
+    }
+
+    .woocommerce-cart .wc-block-grid__product-image {
+        height: 373px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .woocommerce-cart .wc-block-grid {
+
+        margin-top: 65px !important;
+        margin-bottom: 70px !important;
+
+        padding-left: 18px !important;
+        padding-right: 0 !important;
+    }
+
+
+    .woocommerce-cart .wc-block-grid__heading {
+
+        margin-bottom: 24px !important;
+
+        font-size: clamp(32px, 10vw, 44px) !important;
+    }
+
+
+    .woocommerce-cart .wc-block-grid__products {
+
+        gap: 14px !important;
+
+        padding-right: 18px !important;
+    }
+
+
+    .woocommerce-cart .wc-block-grid__product {
+
+        flex: 0 0 78vw !important;
+
+        width: 78vw !important;
+
+        max-width: 78vw !important;
+
+        min-width: 78vw !important;
+    }
+
+
+    .woocommerce-cart .wc-block-grid__product-image {
+
+        height: auto !important;
+
+        aspect-ratio: 3 / 4 !important;
+    }
+
+
+    .woocommerce-cart .wc-block-grid__product-title {
+
+        font-size: 13px !important;
+
+        min-height: 38px !important;
+    }
+
+
+    .woocommerce-cart .wc-block-grid__product-price {
+
+        font-size: 12px !important;
+    }
+
+
+    .woocommerce-cart
+    .wc-block-grid__product-add-to-cart
+    .wp-block-button__link {
+
+        min-height: 43px !important;
+
+        font-size: 8px !important;
+
+        padding-left: 11px !important;
+        padding-right: 11px !important;
+    }
+}
+
+/* =========================================================
+   RANIVASTRA — CART PAGE FULL WIDTH FIX
+   ========================================================= */
+
+/* Main WooCommerce cart wrapper */
+body.woocommerce-cart .site-main,
+body.woocommerce-cart main,
+body.woocommerce-cart .woocommerce {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Remove theme container restriction */
+body.woocommerce-cart .content-area,
+body.woocommerce-cart .site-content,
+body.woocommerce-cart .container,
+body.woocommerce-cart .container-fluid {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+/* WooCommerce cart block itself */
+body.woocommerce-cart .wc-block-cart {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* =========================================================
+   CART CONTENT — USE MORE SCREEN WIDTH
+   ========================================================= */
+
+body.woocommerce-cart .wc-block-cart__main,
+body.woocommerce-cart .wc-block-cart__sidebar {
+    max-width: none !important;
+}
+
+/* Cart inner layout */
+body.woocommerce-cart .wc-block-components-sidebar-layout {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* =========================================================
+   EMPTY CART — FULL WIDTH
+   ========================================================= */
+
+body.woocommerce-cart .wc-block-cart__empty-cart__title {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Empty cart area */
+body.woocommerce-cart .wc-block-cart__empty-cart {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* =========================================================
+   NEW IN STORE — FULL AVAILABLE WIDTH
+   ========================================================= */
+
+body.woocommerce-cart .wc-block-grid {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Heading */
+body.woocommerce-cart .wc-block-grid__heading {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+
+/* =========================================================
+   PRODUCT CAROUSEL
+   ========================================================= */
+
+body.woocommerce-cart .wc-block-grid__products {
+    width: 100% !important;
+    max-width: none !important;
+
+    display: flex !important;
+    flex-wrap: nowrap !important;
+
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    gap: 20px !important;
+
+    margin: 0 !important;
+    padding: 0 0 12px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Desktop — exactly 4 cards visible */
+body.woocommerce-cart .wc-block-grid__product {
+    flex: 0 0 calc((100% - 60px) / 4) !important;
+
+    width: calc((100% - 60px) / 4) !important;
+
+    max-width: none !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+    body.woocommerce-cart .wc-block-grid {
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    body.woocommerce-cart .wc-block-grid {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    body.woocommerce-cart .wc-block-grid__product {
+        flex: 0 0 calc((100% - 40px) / 3) !important;
+        width: calc((100% - 40px) / 3) !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    body.woocommerce-cart .wc-block-grid {
+        padding-left: 18px !important;
+        padding-right: 0 !important;
+    }
+
+    body.woocommerce-cart .wc-block-grid__products {
+        gap: 14px !important;
+        padding-right: 18px !important;
+    }
+
+    body.woocommerce-cart .wc-block-grid__product {
+        flex: 0 0 78% !important;
+        width: 78% !important;
+    }
+
+}
+
+
+/* =========================================================
+   REMOVE HORIZONTAL PAGE OVERFLOW
+   ========================================================= */
+
+body.woocommerce-cart {
+    overflow-x: hidden !important;
+}
+
+body.woocommerce-cart .site,
+body.woocommerce-cart .site-content,
+body.woocommerce-cart main {
+    overflow-x: hidden !important;
+}
+
+/* =========================================================
+   RANIVASTRA — CART EMPTY PAGE
+   FULL WIDTH LAYOUT FIX
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. EMPTY CART MAIN BLOCK
+   This is the actual parent from your HTML
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 0 5vw 100px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   2. EMPTY CART TITLE
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-cart__empty-cart__title {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 80px 0 20px !important;
+
+    padding: 0 !important;
+
+    text-align: center !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    font-size:
+        clamp(42px, 5vw, 70px) !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1 !important;
+
+    letter-spacing: -.04em !important;
+
+    color: var(--rv-text, #171717) !important;
+}
+
+
+/* ---------------------------------------------------------
+   3. SEPARATOR
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wp-block-separator {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 75px 0 65px !important;
+}
+
+
+/* ---------------------------------------------------------
+   4. NEW IN STORE HEADING
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+> h2:not(.wc-block-cart__empty-cart__title) {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 0 35px !important;
+
+    padding: 0 !important;
+
+    text-align: left !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    font-size:
+        clamp(34px, 4vw, 52px) !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.05 !important;
+
+    letter-spacing: -.035em !important;
+
+    color: var(--rv-text, #171717) !important;
+}
+
+
+/* ---------------------------------------------------------
+   5. PRODUCT SECTION
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------------------------------------------------------
+   6. PRODUCT TRACK
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__products {
+
+    display: flex !important;
+
+    flex-wrap: nowrap !important;
+
+    justify-content: flex-start !important;
+
+    align-items: flex-start !important;
+
+    gap: 20px !important;
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 0 0 15px !important;
+
+    overflow-x: auto !important;
+
+    overflow-y: hidden !important;
+
+    list-style: none !important;
+
+    box-sizing: border-box !important;
+
+    scrollbar-width: none !important;
+
+    -webkit-overflow-scrolling: touch !important;
+
+    cursor: grab;
+
+    user-select: none;
+
+    touch-action: pan-x !important;
+}
+
+
+/* Hide scrollbar */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__products::-webkit-scrollbar {
+
+    display: none !important;
+
+    width: 0 !important;
+
+    height: 0 !important;
+}
+
+
+/* ---------------------------------------------------------
+   7. PRODUCT CARDS
+   --------------------------------------------------------- */
+
+/* Desktop = 4 cards visible */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product {
+
+    flex:
+        0 0
+        calc((100% - 60px) / 4) !important;
+
+    width:
+        calc((100% - 60px) / 4) !important;
+
+    max-width: none !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    box-sizing: border-box !important;
+
+    text-align: left !important;
+}
+
+
+/* ---------------------------------------------------------
+   8. PRODUCT IMAGE
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-image {
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    aspect-ratio: 3 / 4 !important;
+
+    margin: 0 0 16px !important;
+
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #f3f0ed !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-image img {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    object-fit: cover !important;
+
+    transition:
+        transform .7s cubic-bezier(.2,.65,.2,1) !important;
+}
+
+
+/* Image hover */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product:hover
+.wc-block-grid__product-image img {
+
+    transform: scale(1.045) !important;
+}
+
+
+/* ---------------------------------------------------------
+   9. SALE BADGE
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-onsale {
+
+    position: absolute !important;
+
+    top: 12px !important;
+
+    left: 12px !important;
+
+    z-index: 5 !important;
+
+    padding: 7px 10px !important;
+
+    margin: 0 !important;
+
+    background: #fff !important;
+
+    color: #111 !important;
+
+    border: 0 !important;
+
+    border-radius: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 9px !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: .12em !important;
+
+    text-transform: uppercase !important;
+}
+
+
+/* ---------------------------------------------------------
+   10. PRODUCT TITLE
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-title {
+
+    min-height: 40px !important;
+
+    margin: 0 0 7px !important;
+
+    padding: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 14px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.4 !important;
+
+    color: var(--rv-text, #171717) !important;
+
+    text-align: left !important;
+}
+
+
+/* ---------------------------------------------------------
+   11. PRICE
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-price {
+
+    min-height: 22px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.5 !important;
+
+    color: var(--rv-muted, #777) !important;
+
+    text-align: left !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-price del {
+
+    opacity: .55 !important;
+
+    margin-right: 5px !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-price ins {
+
+    color: var(--rv-text, #171717) !important;
+
+    text-decoration: none !important;
+
+    font-weight: 500 !important;
+}
+
+
+/* ---------------------------------------------------------
+   12. ADD TO CART BUTTON
+   --------------------------------------------------------- */
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-add-to-cart {
+
+    width: 100% !important;
+
+    margin: 14px 0 0 !important;
+
+    padding: 0 !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-add-to-cart
+.wp-block-button {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    width: 100% !important;
+
+    min-height: 46px !important;
+
+    margin: 0 !important;
+
+    padding: 0 14px 0 16px !important;
+
+    background: var(--rv-dark, #171717) !important;
+
+    color: #fff !important;
+
+    border: 1px solid var(--rv-dark, #171717) !important;
+
+    border-radius: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    font-size: 10px !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: .12em !important;
+
+    text-transform: uppercase !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+        all .4s cubic-bezier(.2,.65,.2,1) !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link::after {
+
+    content: "→" !important;
+
+    font-size: 15px !important;
+
+    margin-left: 12px !important;
+
+    transition:
+        transform .4s ease !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link:hover {
+
+    background: transparent !important;
+
+    color: var(--rv-dark, #171717) !important;
+
+    border-color: var(--rv-dark, #171717) !important;
+
+    transform: translateY(-2px) !important;
+}
+
+
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid__product-add-to-cart
+.wp-block-button__link:hover::after {
+
+    transform: translateX(5px) !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block {
+
+        padding-left: 24px !important;
+
+        padding-right: 24px !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wc-block-grid__product {
+
+        flex-basis:
+            calc((100% - 40px) / 3) !important;
+
+        width:
+            calc((100% - 40px) / 3) !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block {
+
+        padding-left: 18px !important;
+
+        padding-right: 0 !important;
+
+        padding-bottom: 70px !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wc-block-cart__empty-cart__title {
+
+        margin-top: 60px !important;
+
+        padding-right: 18px !important;
+
+        font-size:
+            clamp(38px, 11vw, 54px) !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wp-block-separator {
+
+        width:
+            calc(100% - 18px) !important;
+
+        margin:
+            55px 0 45px !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    > h2:not(.wc-block-cart__empty-cart__title) {
+
+        padding-right: 18px !important;
+
+        margin-bottom: 25px !important;
+
+        font-size:
+            clamp(32px, 10vw, 44px) !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wc-block-grid__products {
+
+        gap: 14px !important;
+
+        padding-right: 18px !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wc-block-grid__product {
+
+        flex:
+            0 0 78% !important;
+
+        width: 78% !important;
+    }
+
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wc-block-grid__product-title {
+
+        font-size: 13px !important;
+
+        min-height: 38px !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-empty-cart-block
+    .wc-block-grid__product {
+
+        flex:
+            0 0 82% !important;
+
+        width: 82% !important;
+    }
+
+}
+
+/* =========================================================
+   RANIVASTRA — CART PAGE
+   FORCE CONTENT TO USE FULL MAX CONTAINER
+   ========================================================= */
+
+/* Cart page outer content */
+body.woocommerce-cart .entry-content,
+body.woocommerce-cart .wp-site-blocks,
+body.woocommerce-cart .is-layout-constrained,
+body.woocommerce-cart .wp-block-post-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* Cart page content container */
+body.woocommerce-cart
+.wp-block-woocommerce-cart {
+
+    width: 100% !important;
+    max-width: var(--wp--style--global--wide-size, 1400px) !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Empty cart content */
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* Product recommendation */
+body.woocommerce-cart
+.wp-block-woocommerce-empty-cart-block
+.wc-block-grid {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   FILLED CART
+   ========================================================= */
+
+body.woocommerce-cart
+.wc-block-components-sidebar-layout {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-sizing: border-box !important;
+}
+
+
+body.woocommerce-cart
+.wc-block-cart-items {
+
+    width: 100% !important;
+
+    max-width: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE SIDE SPACING
+   ========================================================= */
+
+@media (min-width: 1400px) {
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-cart {
+
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1399px) {
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-cart {
+
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    body.woocommerce-cart
+    .wp-block-woocommerce-cart {
+
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+}
+/* =========================================================
+   RANIVASTRA — EMPTY CART
+   REDUCE ICON + TITLE SIZE
+   ========================================================= */
+
+/* Empty cart icon */
+.woocommerce-cart .wc-block-cart__empty-cart__title::before {
+    font-size: 28px !important;
+}
+
+/* Empty cart title */
+.woocommerce-cart .wc-block-cart__empty-cart__title {
+    font-size: clamp(24px, 3vw, 30px) !important;
+}
+/* =========================================================
+   RANIVASTRA — REMOVE SALE BADGE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__product-onsale {
+    display: none !important;
+}
+/* =========================================================
+   RANIVASTRA — YOU MAY LIKE
+   ========================================================= */
+
+.woocommerce-cart .wc-block-grid__heading {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* =========================================================
+   RANIVASTRA — YOU MAY LIKE HEADING
+   ========================================================= */
+
+.woocommerce-cart .wp-block-heading.has-text-align-center {
+    text-align: center !important;
+    width: 100% !important;
+}
+/* Turn "New in store" grid into a horizontal sliding carousel */
+.woocommerce-cart .products {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 10px 10px 25px 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #eee;
+}
+
+.woocommerce-cart .products::-webkit-scrollbar {
+    height: 6px;
+}
+.woocommerce-cart .products::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.woocommerce-cart .products li.product {
+    flex: 0 0 220px !important;
+    max-width: 220px !important;
+    scroll-snap-align: start;
+    text-align: center;
+}
+.woo-cart-slider-wrapper {
+    position: relative;
+    padding: 0 45px;
+}
+
+.woo-slider-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 4px;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.woo-slider-arrow:hover {
+    background: #444;
+}
+
+.woo-slider-arrow.prev { left: 0; }
+.woo-slider-arrow.next { right: 0; }
