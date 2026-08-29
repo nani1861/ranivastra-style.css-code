@@ -1,0 +1,3165 @@
+/*
+Theme Name: Ranivastra
+Author: Ranivastra
+Description: Premium lightweight women's fashion catalog theme with WhatsApp ordering and WooCommerce catalog support.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: ranivastra
+License: GNU General Public License v2 or later
+*/
+:root{--rv-bg:#f8f5f1;--rv-paper:#fffdf9;--rv-text:#211e1c;--rv-muted:#756d67;--rv-accent:#a77b68;--rv-line:#e7e0d9;--rv-dark:#1d1a18;--rv-white:#fff;--rv-max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--rv-bg);color:var(--rv-text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}body.no-scroll{overflow:hidden}img{max-width:100%;height:auto;display:block}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}h1,h2,h3,h4,.rv-brand{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+.rv-site{overflow:hidden}.rv-container{width:min(var(--rv-max),calc(100% - 48px));margin-inline:auto}
+.rv-header{position:sticky;top:0;z-index:1000;background:rgba(248,245,241,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(231,224,217,.9);transition:box-shadow .3s ease,background .3s ease}.rv-header.scrolled{box-shadow:0 12px 40px rgba(20,16,13,.08);background:rgba(248,245,241,.96)}
+.rv-header-inner{min-height:78px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px}.rv-brand{font-size:28px;letter-spacing:.08em;line-height:1;white-space:nowrap}.rv-brand span{color:var(--rv-accent)}
+.rv-nav{display:flex;justify-content:center;gap:28px}.rv-nav a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--rv-text);position:relative;padding:12px 0}.rv-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:1px;background:var(--rv-accent);transition:right .3s ease}.rv-nav a:hover:after{right:0}
+.rv-head-actions{display:flex;align-items:center;gap:12px}.rv-icon-btn,.rv-menu-btn{width:40px;height:40px;border:1px solid var(--rv-line);background:transparent;display:grid;place-items:center;border-radius:50%;cursor:pointer;transition:transform .25s ease,background .25s ease,border-color .25s ease}.rv-icon-btn:hover,.rv-menu-btn:hover{background:var(--rv-white);border-color:#d4c9c0;transform:translateY(-2px)}
+.rv-wa-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;background:var(--rv-dark);color:#fff;border:1px solid var(--rv-dark);font-size:11px;letter-spacing:.12em;text-transform:uppercase;transition:transform .25s ease,background .25s ease}.rv-wa-btn:hover{background:var(--rv-accent);border-color:var(--rv-accent);transform:translateY(-2px)}.rv-menu-btn{display:none}
+.rv-hero{position:relative;min-height:calc(100vh - 79px);display:grid;align-items:center;padding:60px 0}.rv-hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}.rv-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rv-accent);margin:0 0 18px}.rv-hero h1{font-size:clamp(54px,7vw,100px);line-height:.91;margin:0 0 26px;letter-spacing:-.035em}.rv-hero h1 em{font-style:italic;color:var(--rv-accent)}.rv-hero-copy{max-width:520px;color:var(--rv-muted);font-size:17px;margin:0 0 30px}.rv-hero-actions{display:flex;flex-wrap:wrap;gap:12px}.rv-btn{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:0 22px;border:1px solid var(--rv-dark);font-size:11px;letter-spacing:.13em;text-transform:uppercase;transition:all .3s ease}.rv-btn-dark{background:var(--rv-dark);color:#fff}.rv-btn-dark:hover{background:var(--rv-accent);border-color:var(--rv-accent);transform:translateY(-2px)}.rv-btn-light:hover{background:#fff;transform:translateY(-2px)}
+.rv-hero-media{position:relative;min-height:660px}.rv-hero-media:before{content:"";position:absolute;inset:28px -28px -28px 28px;border:1px solid var(--rv-line);z-index:0}.rv-hero-media img,.rv-hero-placeholder{position:relative;z-index:1;width:100%;height:660px;object-fit:cover;background:#ddd4cc}.rv-hero-float{position:absolute;z-index:2;bottom:34px;left:-28px;background:#fffdf9;padding:16px 18px;border:1px solid var(--rv-line);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.rv-section{padding:110px 0}.rv-section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.rv-section-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rv-accent);margin:0 0 9px}.rv-section-title{font-size:clamp(40px,5vw,64px);line-height:1;margin:0}.rv-section-link{font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--rv-text);padding-bottom:4px}
+.rv-category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.rv-category-card{position:relative;min-height:390px;overflow:hidden;background:#d8d0c9}.rv-category-card img{width:100%;height:100%;object-fit:cover;transition:transform 900ms cubic-bezier(.2,.65,.2,1)}.rv-category-card:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,17,15,.55),rgba(20,17,15,0) 60%)}.rv-category-card:hover img{transform:scale(1.055)}.rv-category-content{position:absolute;z-index:2;left:24px;right:24px;bottom:23px;color:#fff}.rv-category-content h3{font-size:31px;margin:0 0 3px}.rv-category-content p{margin:0;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.rv-product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.rv-product-card{position:relative}.rv-product-media{position:relative;aspect-ratio:3/4;overflow:hidden;background:#e9e1da}.rv-product-media img{width:100%;height:100%;object-fit:cover;transition:transform 650ms cubic-bezier(.2,.65,.2,1)}.rv-product-card:hover .rv-product-media img{transform:scale(1.045)}.rv-product-badge{position:absolute;left:12px;top:12px;z-index:2;background:#fff;padding:6px 8px;font-size:9px;letter-spacing:.11em;text-transform:uppercase}.rv-product-info{padding:14px 2px 0}.rv-product-title{margin:0 0 3px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:500}.rv-product-price{font-size:13px;color:var(--rv-muted)}.rv-product-wa{margin-top:11px;display:inline-flex;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rv-accent)}
+.rv-story{background:#efe9e3}.rv-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.rv-story-media img{width:100%;aspect-ratio:4/5;object-fit:cover}.rv-story-copy{max-width:560px}.rv-story-copy p{color:var(--rv-muted);font-size:17px}.rv-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}.rv-point strong{display:block;font-family:Georgia,serif;font-weight:500;font-size:22px;margin-bottom:5px}.rv-point span{font-size:12px;color:var(--rv-muted)}
+.rv-reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.rv-review{padding:28px;background:#fff;border:1px solid var(--rv-line)}.rv-stars{letter-spacing:.18em;color:var(--rv-accent);font-size:12px;margin-bottom:15px}.rv-review p{margin:0 0 14px;color:#514944}.rv-review cite{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-style:normal;color:var(--rv-muted)}
+.rv-cta{padding:92px 0;background:var(--rv-dark);color:#fff}.rv-cta-inner{text-align:center;max-width:720px}.rv-cta .rv-section-kicker{color:#d3ad9c}.rv-cta h2{font-size:clamp(42px,5vw,70px);line-height:1;margin:0 0 18px}.rv-cta p{color:#d6d0cb;max-width:560px;margin:0 auto 28px}
+.rv-footer{padding:70px 0 26px;background:#171412;color:#d8d0ca}.rv-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}.rv-footer h3{color:#fff;font-size:19px;margin:0 0 14px}.rv-footer p{margin:0;color:#aaa19b;font-size:13px}.rv-footer ul{margin:0;padding:0;list-style:none}.rv-footer li{margin:0 0 9px}.rv-footer a{font-size:12px;color:#bdb5af}.rv-footer a:hover{color:#fff}.rv-footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #302a26;margin-top:45px;padding-top:20px;font-size:11px;color:#8d8580}
+.rv-page{padding:80px 0 110px}.rv-page-header{margin-bottom:42px}.rv-page h1{font-size:clamp(48px,7vw,84px);line-height:.95;margin:0 0 14px}.rv-content{max-width:900px}.rv-content p,.rv-content li{color:#5f5751}.rv-content h2,.rv-content h3{margin-top:38px}
+.rv-shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.rv-single-product{padding:70px 0 100px}.rv-single-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:start}.rv-single-media img{width:100%;object-fit:cover}.rv-single-summary .product_title{font-family:Georgia,serif;font-size:54px;line-height:1.02;margin:0 0 12px}.rv-single-summary .price{font-size:19px;color:var(--rv-muted);margin-bottom:18px}.rv-single-summary .woocommerce-product-details__short-description{color:var(--rv-muted)}.rv-single-summary .product_meta{font-size:11px;color:var(--rv-muted)}.rv-wa-product{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:0 20px;background:#218f5b;color:#fff;margin-top:10px;letter-spacing:.08em;text-transform:uppercase;font-size:10px}.rv-wa-product:hover{background:#1a734a;color:#fff}
+.rv-mobile-panel{position:fixed;inset:0 0 0 auto;width:min(380px,88vw);background:var(--rv-paper);z-index:3000;transform:translateX(100%);transition:transform .35s ease;box-shadow:-20px 0 60px rgba(0,0,0,.12);padding:24px}.rv-mobile-panel.open{transform:translateX(0)}.rv-mobile-close{display:flex;margin-left:auto}.rv-mobile-nav{display:grid;gap:4px;margin-top:35px}.rv-mobile-nav a{font-family:Georgia,serif;font-size:31px;padding:10px 0;border-bottom:1px solid var(--rv-line)}.rv-overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:2500;opacity:0;pointer-events:none;transition:opacity .3s ease}.rv-overlay.open{opacity:1;pointer-events:auto}
+.rv-reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.65,.2,1)}.rv-reveal.is-visible{opacity:1;transform:none}.rv-image-reveal{overflow:hidden}.rv-image-reveal img{transform:scale(1.08);transition:transform 1.2s cubic-bezier(.2,.65,.2,1)}.rv-image-reveal.is-visible img{transform:scale(1)}
+@media (max-width:1040px){.rv-header-inner{grid-template-columns:auto auto;justify-content:space-between}.rv-nav{display:none}.rv-menu-btn{display:grid}.rv-head-actions .rv-wa-btn{display:none}.rv-hero-grid,.rv-story-grid,.rv-single-grid{grid-template-columns:1fr}.rv-hero-media{min-height:600px}.rv-hero-media img,.rv-hero-placeholder{height:600px}.rv-product-grid,.rv-shop-grid{grid-template-columns:repeat(2,1fr)}.rv-footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.rv-container{width:min(var(--rv-max),calc(100% - 32px))}.rv-header-inner{min-height:70px}.rv-brand{font-size:23px}.rv-hero{min-height:auto;padding:44px 0 70px}.rv-hero h1{font-size:56px}.rv-hero-copy{font-size:15px}.rv-hero-grid{gap:38px}.rv-hero-media{min-height:auto}.rv-hero-media:before{inset:16px -12px -12px 12px}.rv-hero-media img,.rv-hero-placeholder{height:520px}.rv-hero-float{left:12px;bottom:20px}.rv-section{padding:76px 0}.rv-section-head{display:block}.rv-section-link{display:inline-block;margin-top:13px}.rv-category-grid{grid-template-columns:1fr}.rv-category-card{min-height:340px}.rv-product-grid,.rv-shop-grid{grid-template-columns:1fr 1fr;gap:12px}.rv-story-grid{gap:34px}.rv-points,.rv-reviews-grid{grid-template-columns:1fr}.rv-footer-grid{grid-template-columns:1fr}.rv-footer-bottom{display:block}.rv-single-summary .product_title{font-size:43px}}
+/* =========================================================
+   RANIVASTRA MENU FIX
+   ========================================================= */
+
+.rv-nav {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.rv-nav ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rv-nav li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.rv-nav li::marker {
+    display: none !important;
+}
+
+.rv-nav a {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Keep the header clean */
+.rv-header-inner {
+    min-height: 78px;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+/* =========================================================
+   PREMIUM GRADIENT CURSOR
+   ========================================================= */
+
+.rv-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate3d(-50%, -50%, 0);
+    background:
+    radial-gradient(
+        circle at 30% 30%,
+        rgba(255,255,255,.98) 0%,
+        rgba(242,190,205,.80) 20%,
+        rgba(190,120,150,.58) 42%,
+        rgba(125,95,180,.40) 68%,
+        rgba(40,30,30,0) 100%
+    );
+    filter: blur(2px);
+    mix-blend-mode: multiply;
+    opacity: .9;
+    transition:
+        width .28s ease,
+        height .28s ease,
+        opacity .28s ease,
+        filter .28s ease;
+}
+
+.rv-cursor-dot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000000;
+    transform: translate3d(-50%, -50%, 0);
+    background: #211e1c;
+    transition:
+        transform .22s ease,
+        width .25s ease,
+        height .25s ease,
+        background .25s ease;
+}
+
+.rv-cursor.cursor-hover {
+    width: 58px;
+    height: 58px;
+    opacity: .75;
+    filter: blur(4px);
+}
+
+.rv-cursor-dot.cursor-hover {
+    width: 9px;
+    height: 9px;
+    background: #B77C8A;
+}
+
+/* Don't interfere with form fields */
+input,
+textarea,
+select,
+button {
+    cursor: auto;
+}
+
+/* Desktop only */
+@media (pointer: fine) and (min-width: 769px) {
+
+    body {
+        cursor: none;
+    }
+
+    a,
+    button,
+    .rv-btn,
+    .rv-wa-btn,
+    .rv-icon-btn,
+    .rv-menu-btn,
+    .rv-category-card,
+    .rv-product-card {
+        cursor: none;
+    }
+}
+
+/* Restore normal cursor on touch devices */
+@media (pointer: coarse), (max-width: 768px) {
+
+    .rv-cursor,
+    .rv-cursor-dot {
+        display: none !important;
+    }
+
+    body,
+    a,
+    button {
+        cursor: auto !important;
+    }
+}
+/* Ranivastra brand accent */
+.rv-brand span {
+    color: #B77C8A !important;
+}
+/* =========================================================
+   RANIVASTRA RESPONSIVE MOBILE + TABLET FIX
+   ========================================================= */
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+
+    .rv-container {
+        width: calc(100% - 40px);
+    }
+
+    /* Header */
+    .rv-header-inner {
+        grid-template-columns: auto 1fr auto;
+        gap: 18px;
+        min-height: 72px;
+    }
+
+    .rv-brand {
+        font-size: 24px;
+    }
+
+    .rv-nav {
+        gap: 18px;
+    }
+
+    .rv-nav a {
+        font-size: 10px;
+        letter-spacing: .08em;
+    }
+
+    /* Hero */
+    .rv-hero {
+        min-height: auto;
+        padding: 70px 0 80px;
+    }
+
+    .rv-hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .rv-hero h1 {
+        font-size: clamp(50px, 7vw, 76px);
+    }
+
+    .rv-hero-copy {
+        font-size: 15px;
+    }
+
+    .rv-hero-media {
+        min-height: 560px;
+    }
+
+    .rv-hero-media img,
+    .rv-hero-placeholder {
+        height: 560px;
+    }
+
+    /* Categories */
+    .rv-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rv-category-card {
+        min-height: 340px;
+    }
+
+    /* Products */
+    .rv-product-grid,
+    .rv-shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Story */
+    .rv-story-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    /* Reviews */
+    .rv-reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 767px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .rv-container {
+        width: calc(100% - 28px);
+        max-width: 100%;
+    }
+
+    /* HEADER */
+    .rv-header-inner {
+        min-height: 68px;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .rv-brand {
+        font-size: 22px;
+        letter-spacing: .06em;
+    }
+
+    .rv-nav {
+        display: none !important;
+    }
+
+    .rv-head-actions {
+        gap: 8px;
+    }
+
+    .rv-wa-btn {
+        display: none !important;
+    }
+
+    .rv-menu-btn {
+        display: grid !important;
+        width: 38px;
+        height: 38px;
+    }
+
+
+    /* HERO */
+    .rv-hero {
+        min-height: auto;
+        padding: 42px 0 65px;
+    }
+
+    .rv-hero-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        align-items: stretch;
+    }
+
+    .rv-hero-grid > div:first-child {
+        width: 100%;
+        order: 1;
+    }
+
+    .rv-hero-media {
+        width: 100%;
+        min-height: 0;
+        order: 2;
+    }
+
+    .rv-hero h1 {
+        font-size: clamp(48px, 14vw, 68px);
+        line-height: .9;
+        margin-bottom: 20px;
+    }
+
+    .rv-kicker {
+        font-size: 10px;
+        letter-spacing: .15em;
+        margin-bottom: 14px;
+    }
+
+    .rv-hero-copy {
+        font-size: 14px;
+        line-height: 1.65;
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+
+    .rv-hero-actions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .rv-btn {
+        width: 100%;
+        min-height: 50px;
+        text-align: center;
+    }
+
+    .rv-hero-media:before {
+        inset: 12px -8px -8px 8px;
+    }
+
+    .rv-hero-media img,
+    .rv-hero-placeholder {
+        width: 100%;
+        height: min(125vw, 540px);
+        min-height: 390px;
+        object-fit: cover;
+    }
+
+    .rv-hero-float {
+        left: 12px;
+        bottom: 16px;
+        padding: 12px 14px;
+        font-size: 9px;
+    }
+
+
+    /* SECTIONS */
+    .rv-section {
+        padding: 70px 0;
+    }
+
+    .rv-section-head {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .rv-section-title {
+        font-size: clamp(38px, 11vw, 54px);
+        line-height: 1;
+    }
+
+    .rv-section-link {
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+
+    /* CATEGORIES */
+    .rv-category-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .rv-category-card {
+        min-height: 330px;
+    }
+
+    .rv-category-content {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .rv-category-content h3 {
+        font-size: 28px;
+    }
+
+
+    /* PRODUCTS */
+    .rv-product-grid,
+    .rv-shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .rv-product-media {
+        aspect-ratio: 3 / 4;
+    }
+
+    .rv-product-title {
+        font-size: 13px;
+        line-height: 1.35;
+    }
+
+    .rv-product-price {
+        font-size: 12px;
+    }
+
+    .rv-product-wa {
+        font-size: 9px;
+        letter-spacing: .08em;
+    }
+
+
+    /* STORY */
+    .rv-story-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 75px !important;
+        padding-bottom: 75px !important;
+    }
+
+    .rv-story-media {
+        width: 100%;
+    }
+
+    .rv-story-media img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rv-story-copy {
+        width: 100%;
+    }
+
+    .rv-story-copy p {
+        font-size: 15px;
+    }
+
+
+    /* POINTS */
+    .rv-points {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+
+    /* REVIEWS */
+    .rv-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .rv-review {
+        padding: 22px;
+    }
+
+
+    /* CTA */
+    .rv-cta {
+        padding: 70px 0;
+    }
+
+    .rv-cta h2 {
+        font-size: clamp(40px, 11vw, 58px);
+    }
+
+    .rv-cta p {
+        font-size: 14px;
+    }
+
+
+    /* FOOTER */
+    .rv-footer {
+        padding: 55px 0 22px;
+    }
+
+    .rv-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rv-footer-bottom {
+        display: block;
+        line-height: 1.8;
+    }
+
+
+    /* NORMAL PAGES */
+    .rv-page {
+        padding: 60px 0 80px;
+    }
+
+    .rv-page h1 {
+        font-size: clamp(46px, 13vw, 64px);
+    }
+
+
+    /* PRODUCT PAGE */
+    .rv-single-product {
+        padding: 45px 0 70px;
+    }
+
+    .rv-single-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .rv-single-summary .product_title {
+        font-size: clamp(38px, 11vw, 52px);
+    }
+
+
+    /* MOBILE MENU */
+    .rv-mobile-panel {
+        width: min(88vw, 370px);
+    }
+
+    .rv-mobile-nav a {
+        font-size: 28px;
+    }
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width: 420px) {
+
+    .rv-container {
+        width: calc(100% - 22px);
+    }
+
+    .rv-brand {
+        font-size: 20px;
+    }
+
+    .rv-hero h1 {
+        font-size: 46px;
+    }
+
+    .rv-hero-media img,
+    .rv-hero-placeholder {
+        height: 470px;
+        min-height: 0;
+    }
+
+    .rv-product-grid,
+    .rv-shop-grid {
+        gap: 9px;
+    }
+
+    .rv-product-title {
+        font-size: 12px;
+    }
+
+    .rv-product-wa {
+        font-size: 8px;
+    }
+}
+/* =====================================================
+   RANIVASTRA MOBILE HERO REFINEMENT
+   ===================================================== */
+
+@media (max-width: 767px) {
+
+    .rv-hero {
+        padding-top: 34px;
+        padding-bottom: 46px;
+    }
+
+    .rv-kicker {
+        font-size: 9px;
+        margin-bottom: 11px;
+    }
+
+    .rv-hero h1 {
+        font-size: clamp(43px, 11.5vw, 58px);
+        line-height: .92;
+        letter-spacing: -.025em;
+        margin-bottom: 17px;
+    }
+
+    .rv-hero-copy {
+        font-size: 14px;
+        line-height: 1.55;
+        margin-bottom: 20px;
+    }
+
+    .rv-hero-actions {
+        gap: 8px;
+    }
+
+    .rv-btn {
+        min-height: 46px;
+        font-size: 10px;
+    }
+
+    .rv-hero-media {
+        margin-top: 4px;
+    }
+
+    .rv-hero-media img,
+    .rv-hero-placeholder {
+        height: 480px;
+        min-height: 0;
+    }
+
+    .rv-hero-float {
+        font-size: 8px;
+        padding: 10px 12px;
+    }
+}
+/* =========================================================
+   RANIVASTRA - SIDEBAR CLEANUP
+   ========================================================= */
+
+aside,
+.sidebar,
+.widget-area,
+#secondary,
+.woocommerce-sidebar {
+    display: none !important;
+}
+
+.woocommerce .site-main,
+main,
+.rv-page,
+.rv-single-product {
+    width: 100%;
+    max-width: 100%;
+}
+/* =========================================================
+   RANIVASTRA - REMOVE DEFAULT WOOCOMMERCE SALE BADGE
+   ========================================================= */
+
+.woocommerce span.onsale {
+    display: none !important;
+}
+
+
+/* =========================================================
+   PREMIUM PRODUCT CARDS
+   ========================================================= */
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    position: relative;
+    transition:
+        transform .45s cubic-bezier(.2,.65,.2,1),
+        box-shadow .45s ease;
+}
+
+.woocommerce ul.products li.product:hover,
+.woocommerce-page ul.products li.product:hover {
+    transform: translateY(-7px);
+}
+
+
+/* Product image */
+
+.woocommerce ul.products li.product a img,
+.woocommerce-page ul.products li.product a img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(.2,.65,.2,1),
+        filter .5s ease,
+        box-shadow .5s ease;
+}
+
+.woocommerce ul.products li.product:hover a img,
+.woocommerce-page ul.products li.product:hover a img {
+    transform: scale(1.04);
+    filter: brightness(.97);
+
+    box-shadow:
+        0 20px 45px rgba(32,26,22,.12);
+}
+
+
+/* Product title */
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce-page ul.products li.product .woocommerce-loop-product__title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+
+    margin-top: 15px;
+
+    color: #211e1c;
+
+    transition: color .25s ease;
+}
+
+.woocommerce ul.products li.product:hover .woocommerce-loop-product__title,
+.woocommerce-page ul.products li.product:hover .woocommerce-loop-product__title {
+    color: #a85d72;
+}
+
+
+/* Price */
+
+.woocommerce ul.products li.product .price,
+.woocommerce-page ul.products li.product .price {
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+
+/* Old price */
+
+.woocommerce ul.products li.product .price del,
+.woocommerce-page ul.products li.product .price del {
+    color: #9b918a;
+    font-size: 12px;
+}
+
+
+/* Sale price */
+
+.woocommerce ul.products li.product .price ins,
+.woocommerce-page ul.products li.product .price ins {
+    color: #a85d72;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* Product links */
+
+.woocommerce ul.products li.product a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .woocommerce ul.products li.product .woocommerce-loop-product__title,
+    .woocommerce-page ul.products li.product .woocommerce-loop-product__title {
+        font-size: 12px;
+    }
+
+    .woocommerce ul.products li.product .price,
+    .woocommerce-page ul.products li.product .price {
+        font-size: 12px;
+    }
+
+    .woocommerce ul.products li.product .price ins,
+    .woocommerce-page ul.products li.product .price ins {
+        font-size: 14px;
+    }
+}
+/* =========================================================
+   RANIVASTRA - PREMIUM PRODUCT PAGE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PRODUCT PAGE CONTAINER
+   --------------------------------------------------------- */
+
+.rv-single-product {
+    padding: 70px 0 110px;
+}
+
+.rv-single-product .rv-container {
+    max-width: 1120px;
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT TWO-COLUMN LAYOUT
+   --------------------------------------------------------- */
+
+.rv-single-grid {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 520px)
+        minmax(0, 1fr);
+
+    gap: 68px;
+    align-items: start;
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT IMAGE
+   --------------------------------------------------------- */
+
+.rv-single-media {
+    width: 100%;
+    max-width: 520px;
+}
+
+.rv-single-media img {
+    width: 100%;
+    max-height: 690px;
+    object-fit: cover;
+
+    display: block;
+
+    box-shadow:
+        0 18px 55px rgba(32,25,22,.08);
+
+    transition:
+        transform .8s cubic-bezier(.2,.65,.2,1),
+        box-shadow .5s ease;
+}
+
+
+/* Elegant image hover */
+
+.rv-single-media:hover img {
+    transform: scale(1.012);
+
+    box-shadow:
+        0 25px 65px rgba(32,25,22,.13);
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT INFORMATION
+   --------------------------------------------------------- */
+
+.rv-single-summary {
+    padding-top: 10px;
+    position: sticky;
+    top: 110px;
+}
+
+
+/* Product title */
+
+.rv-single-summary .product_title {
+    margin: 0 0 17px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(42px, 4.3vw, 64px);
+
+    line-height: .98;
+
+    letter-spacing: -.035em;
+
+    font-weight: 500;
+
+    color: #211e1c;
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT PRICE
+   --------------------------------------------------------- */
+
+.rv-single-summary .price {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 0 0 26px;
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+/* Original price */
+
+.rv-single-summary .price del {
+    font-size: 14px;
+    color: #99908a;
+}
+
+
+/* Discounted price */
+
+.rv-single-summary .price ins {
+
+    color: #a85d72;
+
+    text-decoration: none;
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    position: relative;
+}
+
+
+/* Small sale text */
+
+.rv-single-summary .price ins::after {
+
+    content: "SPECIAL PRICE";
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: .12em;
+
+    color: #a85d72;
+
+    margin-left: 8px;
+
+    vertical-align: middle;
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT DESCRIPTION
+   --------------------------------------------------------- */
+
+.rv-single-summary
+.woocommerce-product-details__short-description {
+
+    max-width: 570px;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    color: #645c56;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------------------------------------------------------
+   REMOVE DEFAULT PURCHASE ELEMENTS
+   --------------------------------------------------------- */
+
+.rv-single-summary form.cart,
+.rv-single-summary .quantity,
+.rv-single-summary .single_add_to_cart_button,
+.rv-single-summary .stock,
+.rv-single-summary .woocommerce-variation-availability {
+
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   WHATSAPP BUTTON
+   --------------------------------------------------------- */
+
+.rv-single-summary .rv-wa-product {
+
+    width: 100%;
+
+    max-width: 430px;
+
+    min-height: 56px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    background: #218f5b;
+
+    color: #fff;
+
+    border: 1px solid #218f5b;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: .13em;
+
+    text-transform: uppercase;
+
+    overflow: hidden;
+
+    transition:
+        transform .35s cubic-bezier(.2,.65,.2,1),
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+/* Moving shine */
+
+.rv-single-summary .rv-wa-product::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 90px;
+
+    background:
+        linear-gradient(
+            100deg,
+            transparent,
+            rgba(255,255,255,.25),
+            transparent
+        );
+
+    transform: translateX(-150px) skewX(-18deg);
+
+    transition:
+        transform .7s ease;
+}
+
+
+/* Hover */
+
+.rv-single-summary .rv-wa-product:hover {
+
+    background: #176f48;
+
+    border-color: #176f48;
+
+    color: #fff;
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 35px rgba(33,143,91,.20);
+}
+
+
+.rv-single-summary .rv-wa-product:hover::before {
+
+    transform:
+        translateX(500px) skewX(-18deg);
+}
+
+
+/* ---------------------------------------------------------
+   PRODUCT META
+   --------------------------------------------------------- */
+
+.rv-single-summary .product_meta {
+
+    margin-top: 24px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e7e0d9;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #827a74;
+}
+
+.rv-single-summary .product_meta a {
+
+    color: #6c5750;
+
+    transition:
+        color .25s ease;
+}
+
+.rv-single-summary .product_meta a:hover {
+
+    color: #a85d72;
+}
+
+
+/* ---------------------------------------------------------
+   INFORMATION DIVIDERS
+   --------------------------------------------------------- */
+
+.rv-single-summary .woocommerce-product-details__short-description
++ .product_meta {
+
+    margin-top: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   HIDE EMPTY REVIEW AREA
+   --------------------------------------------------------- */
+
+.single-product #reviews {
+
+    margin-top: 50px;
+}
+
+.single-product #reviews
+.woocommerce-noreviews {
+
+    color: #746b65;
+}
+
+
+/* ---------------------------------------------------------
+   RELATED PRODUCTS
+   --------------------------------------------------------- */
+
+.single-product .related.products {
+
+    width: min(1120px, calc(100% - 48px));
+
+    margin:
+        100px auto 0;
+
+    padding-top: 80px;
+
+    border-top:
+        1px solid #e7e0d9;
+}
+
+.single-product .related.products > h2 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 45px;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    margin-bottom: 32px;
+}
+
+
+/* ---------------------------------------------------------
+   BREADCRUMBS
+   --------------------------------------------------------- */
+
+.single-product .woocommerce-breadcrumb {
+
+    width: min(1120px, calc(100% - 48px));
+
+    margin:
+        0 auto 28px;
+
+    font-size: 10px;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+    color: #887e77;
+}
+
+.single-product .woocommerce-breadcrumb a:hover {
+
+    color: #a85d72;
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+
+    .rv-single-grid {
+
+        grid-template-columns:
+            minmax(0, 46%)
+            minmax(0, 54%);
+
+        gap: 40px;
+    }
+
+    .rv-single-media {
+        max-width: 100%;
+    }
+
+    .rv-single-media img {
+
+        max-height: 620px;
+    }
+
+    .rv-single-summary .product_title {
+
+        font-size:
+            clamp(40px, 5vw, 56px);
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    .rv-single-product {
+
+        padding:
+            38px 0 70px;
+    }
+
+    .rv-single-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 34px;
+    }
+
+    .rv-single-media {
+
+        max-width: 100%;
+    }
+
+    .rv-single-media img {
+
+        max-height: none;
+
+        height: auto;
+
+        box-shadow:
+            0 15px 35px rgba(32,25,22,.09);
+    }
+
+    .rv-single-summary {
+
+        position: static;
+
+        padding-top: 0;
+    }
+
+    .rv-single-summary .product_title {
+
+        font-size:
+            clamp(38px, 11vw, 50px);
+    }
+
+    .rv-single-summary .price {
+
+        margin-bottom: 20px;
+    }
+
+    .rv-single-summary
+    .woocommerce-product-details__short-description {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .rv-single-summary
+    .rv-wa-product {
+
+        max-width: 100%;
+    }
+
+    .single-product .related.products {
+
+        width:
+            calc(100% - 28px);
+
+        margin-top: 65px;
+
+        padding-top: 55px;
+    }
+
+    .single-product .related.products > h2 {
+
+        font-size: 37px;
+    }
+
+    .single-product .woocommerce-breadcrumb {
+
+        width:
+            calc(100% - 28px);
+
+        margin-bottom: 20px;
+    }
+}
+/* =========================================================
+   RANIVASTRA PREMIUM PURCHASE AREA
+   ========================================================= */
+
+.rv-purchase-area {
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   STOCK STATUS
+   ========================================================= */
+
+.rv-stock {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.rv-stock-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rv-stock-good {
+    color: #55735d;
+}
+
+.rv-stock-good .rv-stock-dot {
+    background: #55735d;
+}
+
+.rv-stock-low {
+    color: #b23b50;
+    font-weight: 600;
+
+    animation:
+        rvStockPulse 1.8s ease-in-out infinite;
+}
+
+.rv-stock-low .rv-stock-dot {
+    background: #c63f54;
+
+    box-shadow:
+        0 0 0 0 rgba(198,63,84,.45);
+
+    animation:
+        rvStockDot 1.6s ease-out infinite;
+}
+
+.rv-stock-out {
+    color: #9a3838;
+}
+
+.rv-stock-out .rv-stock-dot {
+    background: #9a3838;
+}
+
+@keyframes rvStockPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .62;
+    }
+}
+
+@keyframes rvStockDot {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(198,63,84,.45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 7px rgba(198,63,84,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(198,63,84,0);
+    }
+}
+
+
+/* =========================================================
+   QUANTITY
+   ========================================================= */
+
+.rv-quantity-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 430px;
+
+    margin-bottom: 16px;
+
+    padding: 13px 0;
+
+    border-top: 1px solid #e7e0d9;
+    border-bottom: 1px solid #e7e0d9;
+}
+
+.rv-quantity-label {
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+
+    color: #756d67;
+}
+
+.rv-quantity-control {
+    display: inline-flex;
+    align-items: center;
+
+    border: 1px solid #dcd3cc;
+
+    background: #fffdf9;
+}
+
+.rv-qty-btn {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #211e1c;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+.rv-qty-btn:hover {
+    background: #efe6e0;
+    color: #a85d72;
+}
+
+.rv-qty-btn:active {
+    transform: scale(.90);
+}
+
+.rv-qty-input {
+    width: 45px;
+    height: 42px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-left: 1px solid #e4dcd5;
+    border-right: 1px solid #e4dcd5;
+
+    background: transparent;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #211e1c;
+
+    outline: none;
+
+    -moz-appearance: textfield;
+}
+
+.rv-qty-input::-webkit-inner-spin-button,
+.rv-qty-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* =========================================================
+   PREMIUM WHATSAPP BUTTON
+   ========================================================= */
+
+.rv-wa-product-premium {
+    position: relative;
+
+    width: 100%;
+    max-width: 430px;
+
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+
+    overflow: hidden;
+
+    background: #218f5b;
+
+    border: 1px solid #218f5b;
+
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: .14em;
+    text-transform: uppercase;
+
+    transition:
+        transform .4s cubic-bezier(.2,.65,.2,1),
+        box-shadow .4s ease,
+        color .3s ease;
+}
+
+
+/* Left-to-right fill layer */
+
+.rv-wa-product-premium::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #a85d72;
+
+    transform:
+        translateX(-101%);
+
+    transition:
+        transform .55s cubic-bezier(.77,0,.18,1);
+
+    z-index: 0;
+}
+
+
+/* subtle shine */
+
+.rv-wa-product-premium::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: -40%;
+
+    width: 25%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.20),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition:
+        left .8s ease;
+
+    z-index: 2;
+}
+
+.rv-wa-product-premium:hover::before {
+    transform:
+        translateX(0);
+}
+
+.rv-wa-product-premium:hover::after {
+    left: 125%;
+}
+
+.rv-wa-product-premium:hover {
+    color: #fff;
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 38px rgba(168,93,114,.20);
+}
+
+.rv-wa-label,
+.rv-wa-arrow {
+    position: relative;
+    z-index: 3;
+}
+
+.rv-wa-arrow {
+    font-size: 16px;
+
+    transition:
+        transform .35s cubic-bezier(.2,.65,.2,1);
+}
+
+.rv-wa-product-premium:hover .rv-wa-arrow {
+    transform:
+        translateX(5px);
+}
+
+
+/* =========================================================
+   PRODUCT PRICE REFINEMENT
+   ========================================================= */
+
+.rv-single-summary .price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 24px;
+}
+
+.rv-single-summary .price del {
+    color: #9e958f;
+
+    font-size: 14px;
+}
+
+.rv-single-summary .price ins {
+    color: #a85d72;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION ANIMATION
+   ========================================================= */
+
+.rv-single-summary > * {
+    animation:
+        rvProductFade .65s cubic-bezier(.2,.65,.2,1) both;
+}
+
+.rv-single-summary > *:nth-child(1) {
+    animation-delay: .05s;
+}
+
+.rv-single-summary > *:nth-child(2) {
+    animation-delay: .10s;
+}
+
+.rv-single-summary > *:nth-child(3) {
+    animation-delay: .15s;
+}
+
+.rv-single-summary > *:nth-child(4) {
+    animation-delay: .20s;
+}
+
+@keyframes rvProductFade {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.rv-single-media {
+    overflow: hidden;
+}
+
+.rv-single-media img {
+    transition:
+        transform 900ms cubic-bezier(.2,.65,.2,1),
+        filter 500ms ease;
+}
+
+.rv-single-media:hover img {
+    transform:
+        scale(1.025);
+
+    filter:
+        brightness(.97);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .rv-purchase-area {
+        margin-top: 22px;
+    }
+
+    .rv-quantity-row {
+        max-width: none;
+    }
+
+    .rv-wa-product-premium {
+        max-width: none;
+        min-height: 56px;
+    }
+
+    .rv-single-summary .price ins {
+        font-size: 21px;
+    }
+}
+/* =========================================================
+   RANIVASTRA PRODUCT PAGE - FINAL LAYOUT FIX
+   ========================================================= */
+
+/* Reduce top whitespace */
+.single-product .rv-single-product {
+    padding-top: 22px !important;
+    padding-bottom: 70px !important;
+}
+
+/* Keep breadcrumb compact */
+.single-product .woocommerce-breadcrumb {
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+
+/* Product columns */
+.single-product .rv-single-grid {
+    grid-template-columns: minmax(0, 470px) minmax(0, 1fr) !important;
+    gap: 58px !important;
+    align-items: start !important;
+}
+
+/* Smaller main product image */
+.single-product .rv-single-media {
+    width: 100% !important;
+    max-width: 470px !important;
+    overflow: hidden !important;
+}
+
+.single-product .rv-single-media img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 620px !important;
+    object-fit: contain !important;
+}
+
+/* Stop gallery containers from creating a giant blank area */
+.single-product .rv-single-media .woocommerce-product-gallery,
+.single-product .rv-single-media .woocommerce-product-gallery__wrapper,
+.single-product .rv-single-media .woocommerce-product-gallery__image {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+/* Product summary */
+.single-product .rv-single-summary {
+    padding-top: 0 !important;
+}
+
+/* Reduce unnecessary space below purchase area */
+.single-product .rv-purchase-area {
+    margin-bottom: 0 !important;
+}
+
+/* Related products should be separated cleanly */
+.single-product .related.products {
+    clear: both !important;
+    width: min(1120px, calc(100% - 48px)) !important;
+    margin: 65px auto 0 !important;
+    padding-top: 55px !important;
+    border-top: 1px solid #e7e0d9 !important;
+}
+
+.single-product .related.products > h2 {
+    margin: 0 0 28px !important;
+}
+
+/* Remove huge gap caused by product data area */
+.single-product .woocommerce-tabs {
+    margin-top: 45px !important;
+    margin-bottom: 0 !important;
+}
+
+/* When there are no reviews, don't show an empty review block */
+.single-product .woocommerce-noreviews,
+.single-product #review_form_wrapper {
+    margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .single-product .rv-single-grid {
+        grid-template-columns: minmax(0, 44%) minmax(0, 56%) !important;
+        gap: 35px !important;
+    }
+
+    .single-product .rv-single-media {
+        max-width: 100% !important;
+    }
+
+    .single-product .rv-single-media img {
+        max-height: 560px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .single-product .rv-single-product {
+        padding-top: 18px !important;
+        padding-bottom: 55px !important;
+    }
+
+    .single-product .rv-single-grid {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    .single-product .rv-single-media {
+        max-width: 100% !important;
+    }
+
+    .single-product .rv-single-media img {
+        max-height: none !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    .single-product .related.products {
+        width: calc(100% - 28px) !important;
+        margin-top: 50px !important;
+        padding-top: 45px !important;
+    }
+}
+/* =========================================================
+   REMOVE WOOCOMMERCE BREADCRUMBS
+   ========================================================= */
+
+.woocommerce-breadcrumb {
+    display: none !important;
+}
+/* =========================================================
+   RANIVASTRA PREMIUM PURCHASE BOX
+   ========================================================= */
+
+.rv-purchase-area {
+    margin-top: 28px;
+    padding: 24px;
+    border: 1px solid rgba(92, 72, 48, 0.16);
+    border-radius: 18px;
+    background: linear-gradient(
+        145deg,
+        #fffdf9,
+        #f8f2ea
+    );
+    box-shadow:
+        0 14px 40px rgba(60, 45, 30, 0.08);
+}
+
+
+/* Stock */
+
+.rv-stock {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rv-stock-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rv-stock-low {
+    color: #b42318;
+}
+
+.rv-stock-low .rv-stock-dot {
+    background: #d92d20;
+    box-shadow: 0 0 10px rgba(217,45,32,.45);
+}
+
+.rv-stock-good {
+    color: #277245;
+}
+
+.rv-stock-good .rv-stock-dot {
+    background: #3f9b63;
+}
+
+
+/* Quantity */
+
+.rv-quantity-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.rv-quantity-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rv-quantity-control {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border: 1px solid rgba(92,72,48,.18);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.rv-qty-btn {
+    width: 46px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 21px;
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .2s ease;
+}
+
+.rv-qty-btn:hover {
+    background: #6f542d;
+    color: #fff;
+}
+
+.rv-qty-btn:active {
+    transform: scale(.9);
+}
+
+.rv-qty-input {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    text-align: center;
+    font-weight: 600;
+    background: transparent;
+    outline: none;
+}
+
+
+/* =========================================================
+   PREMIUM WHATSAPP BUTTON
+   ========================================================= */
+
+.rv-wa-product-premium {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    min-height: 58px;
+    padding: 0 21px;
+    overflow: hidden;
+    border-radius: 13px;
+    text-decoration: none !important;
+    background: #241f19;
+    color: #fff !important;
+    border: 1px solid #241f19;
+    isolation: isolate;
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        box-shadow .35s ease;
+}
+
+
+/* Animated fill */
+
+.rv-wa-product-premium::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0;
+    background: #6f542d;
+    z-index: -1;
+    transition:
+        width .45s cubic-bezier(.2,.8,.2,1);
+}
+
+.rv-wa-product-premium:hover::before {
+    width: 100%;
+}
+
+.rv-wa-product-premium:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 14px 30px rgba(60,45,30,.20);
+}
+
+.rv-wa-label,
+.rv-wa-arrow {
+    position: relative;
+    z-index: 2;
+}
+
+.rv-wa-label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.rv-wa-arrow {
+    font-size: 23px;
+    transition:
+        transform .35s ease;
+}
+
+.rv-wa-product-premium:hover .rv-wa-arrow {
+    transform: translateX(6px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .rv-purchase-area {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .rv-quantity-row {
+        margin-bottom: 18px;
+    }
+
+}
+/* =========================================================
+   RELATED PRODUCTS
+   ========================================================= */
+
+.single-product .related.products {
+    width: min(1120px, calc(100% - 40px));
+    margin: 65px auto 0 !important;
+    padding-top: 55px;
+    border-top: 1px solid rgba(92,72,48,.12);
+}
+
+.single-product .related.products > h2 {
+    margin: 0 0 8px !important;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 34px);
+    letter-spacing: -.02em;
+}
+
+.single-product .related.products > h2::after {
+    content: "Pieces selected for your style";
+    display: block;
+    margin-top: 9px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    opacity: .6;
+}
+
+.single-product .related.products ul.products {
+    margin-top: 34px !important;
+}
+
+.single-product .related.products li.product {
+    transition:
+        transform .4s cubic-bezier(.2,.8,.2,1);
+}
+
+.single-product .related.products li.product:hover {
+    transform: translateY(-7px);
+}
+/* =========================================================
+   NEW ARRIVALS - PRICE + WHATSAPP FIX
+   ========================================================= */
+
+.rv-product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.rv-product-title {
+    margin-bottom: 8px !important;
+}
+
+.rv-product-price {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin: 8px 0 16px !important;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.rv-product-price .price {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.rv-product-price del {
+    opacity: .55;
+    margin-right: 7px;
+}
+
+.rv-product-price ins {
+    text-decoration: none;
+}
+
+.rv-product-wa {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+/* =========================================================
+   RANIVASTRA - NEW ARRIVALS PRODUCT GRID FIX
+   ========================================================= */
+
+.rv-new-arrivals-page .rv-new-arrivals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 42px 26px;
+    align-items: start;
+}
+
+
+/* PRODUCT CARD */
+
+.rv-new-arrivals-page .rv-new-product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: auto;
+    overflow: visible;
+    background: transparent;
+}
+
+
+/* IMAGE */
+
+.rv-new-arrivals-page .rv-product-media {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #f3eee9;
+}
+
+
+.rv-new-arrivals-page .rv-product-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:
+        transform .7s cubic-bezier(.2,.7,.2,1),
+        filter .5s ease;
+}
+
+
+.rv-new-arrivals-page .rv-new-product-card:hover
+.rv-product-media img {
+    transform: scale(1.045);
+}
+
+
+/* NEW BADGE */
+
+.rv-new-arrivals-page .rv-product-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    padding: 7px 11px;
+
+    background: #fff;
+    color: #1d1a18;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+
+    z-index: 3;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.rv-new-arrivals-page .rv-product-info {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 150px;
+
+    padding: 17px 2px 0;
+
+    background: transparent;
+}
+
+
+/* TITLE */
+
+.rv-new-arrivals-page .rv-product-title {
+    margin: 0 0 10px;
+
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 400;
+}
+
+
+.rv-new-arrivals-page .rv-product-title a {
+    color: #211e1c;
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+
+.rv-new-arrivals-page .rv-product-title a:hover {
+    color: #a87582;
+}
+
+
+/* PRICE */
+
+.rv-new-arrivals-page .rv-product-price {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+
+.rv-new-arrivals-page .rv-product-price del {
+    color: #aaa;
+    margin-right: 8px;
+}
+
+
+.rv-new-arrivals-page .rv-product-price ins {
+    color: #8f7880;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* WHATSAPP BUTTON */
+
+.rv-new-arrivals-page .rv-new-product-wa {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 48px;
+
+    padding: 0 16px;
+
+    overflow: hidden;
+
+    background: #211d1b;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    border: 0;
+
+    transition:
+        color .35s ease,
+        transform .3s ease,
+        box-shadow .35s ease;
+}
+
+
+/* LEFT TO RIGHT HOVER FILL */
+
+.rv-new-arrivals-page .rv-new-product-wa::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 0;
+
+    background: #a87582;
+
+    transition: width .45s cubic-bezier(.2,.7,.2,1);
+
+    z-index: 0;
+}
+
+
+.rv-new-arrivals-page .rv-new-product-wa:hover::before {
+    width: 100%;
+}
+
+
+.rv-new-arrivals-page .rv-new-product-wa span,
+.rv-new-arrivals-page .rv-new-product-wa strong {
+    position: relative;
+    z-index: 1;
+}
+
+
+.rv-new-arrivals-page .rv-new-product-wa strong {
+    font-size: 17px;
+    font-weight: 400;
+
+    transition: transform .35s ease;
+}
+
+
+.rv-new-arrivals-page .rv-new-product-wa:hover {
+    color: #fff;
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(33, 29, 27, .14);
+}
+
+
+.rv-new-arrivals-page .rv-new-product-wa:hover strong {
+    transform: translateX(5px);
+}
+
+
+/* EMPTY STATE */
+
+.rv-new-arrivals-page .rv-empty-products {
+    grid-column: 1 / -1;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .rv-new-arrivals-page .rv-new-arrivals-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 34px 20px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .rv-new-arrivals-page .rv-new-arrivals-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 14px;
+    }
+
+    .rv-new-arrivals-page .rv-product-info {
+        min-height: 145px;
+        padding-top: 13px;
+    }
+
+    .rv-new-arrivals-page .rv-product-title {
+        font-size: 14px;
+    }
+
+    .rv-new-arrivals-page .rv-product-price {
+        font-size: 14px;
+    }
+
+    .rv-new-arrivals-page .rv-new-product-wa {
+        min-height: 43px;
+        padding: 0 11px;
+        font-size: 9px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .rv-new-arrivals-page .rv-new-arrivals-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
+   RANIVASTRA - PERFECT PRODUCT CARD ALIGNMENT
+   ========================================================= */
+
+.rv-new-arrivals-page .rv-product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Reserve exactly 2 title lines for EVERY product */
+.rv-new-arrivals-page .rv-product-title {
+    min-height: calc(1.45em * 2);
+    margin-bottom: 10px;
+}
+
+
+/* Keep price area the same height */
+.rv-new-arrivals-page .rv-product-price {
+    min-height: 21px;
+    margin-bottom: 16px;
+}
+
+
+/* Push WhatsApp button to the same bottom position */
+.rv-new-arrivals-page .rv-new-product-wa {
+    margin-top: auto;
+}
+
+
+/* Make every card's information area equal */
+.rv-new-arrivals-page .rv-new-product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 700px) {
+
+    .rv-new-arrivals-page .rv-product-title {
+        min-height: calc(1.45em * 2);
+    }
+
+}
+/* =========================================================
+   RANIVASTRA - ARCHIVE WHATSAPP BUTTON
+   SHOP + PRODUCT CATEGORIES
+   ========================================================= */
+
+.woocommerce ul.products li.product {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Product information becomes a flexible column */
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    min-height: calc(1.45em * 2);
+}
+
+
+/* Price gets consistent spacing */
+
+.woocommerce ul.products li.product .price {
+    min-height: 24px;
+    margin-bottom: 16px;
+}
+
+
+/* WhatsApp button */
+
+.woocommerce ul.products li.product .rv-archive-product-wa {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 48px;
+
+    padding: 0 16px;
+
+    overflow: hidden;
+
+    background: #211d1b;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    box-sizing: border-box;
+
+    transition:
+        transform .3s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* Animated left → right fill */
+
+.woocommerce ul.products li.product .rv-archive-product-wa::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 0;
+
+    background: #a87582;
+
+    transition:
+        width .45s cubic-bezier(.2,.7,.2,1);
+
+    z-index: 0;
+}
+
+
+.woocommerce ul.products li.product .rv-archive-product-wa:hover::before {
+    width: 100%;
+}
+
+
+/* Button text */
+
+.woocommerce ul.products li.product .rv-archive-product-wa span,
+.woocommerce ul.products li.product .rv-archive-product-wa strong {
+    position: relative;
+    z-index: 1;
+}
+
+
+.woocommerce ul.products li.product .rv-archive-product-wa strong {
+    font-size: 17px;
+    font-weight: 400;
+
+    transition:
+        transform .35s ease;
+}
+
+
+/* Hover */
+
+.woocommerce ul.products li.product .rv-archive-product-wa:hover {
+    color: #fff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(33, 29, 27, .14);
+}
+
+
+.woocommerce ul.products li.product .rv-archive-product-wa:hover strong {
+    transform: translateX(5px);
+}
+/* =========================================================
+   ARCHIVE PRODUCT CARD ALIGNMENT
+   ========================================================= */
+
+.woocommerce ul.products li.product {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    min-height: calc(1.45em * 2) !important;
+}
+
+
+.woocommerce ul.products li.product .price {
+    min-height: 24px;
+}
+
+
+.woocommerce ul.products li.product .rv-archive-product-wa {
+    margin-top: auto;
+}
+/* =========================================================
+   RANIVASTRA HOME NEW ARRIVALS
+   Premium Product Cards
+   ========================================================= */
+
+.rv-home-product-grid {
+    align-items: stretch;
+}
+
+.rv-home-product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* PRODUCT IMAGE */
+
+.rv-home-product-card .rv-product-media {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.rv-home-product-card .rv-product-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.rv-home-product-card .rv-product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+
+
+/* PRODUCT TITLE */
+
+.rv-home-product-card .rv-product-title {
+    min-height: 3.2em;
+    margin-bottom: 12px;
+    line-height: 1.45;
+}
+
+
+/* PRICE */
+
+.rv-home-product-card .rv-product-price {
+    margin-bottom: 18px;
+}
+
+
+/* WHATSAPP BUTTON */
+
+.rv-home-product-card .rv-product-wa {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 62px;
+
+    margin-top: auto;
+    padding: 0 22px;
+
+    background: #211d1b;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* LEFT → RIGHT ANIMATION */
+
+.rv-home-product-card .rv-product-wa::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 100%;
+
+    background: #a87882;
+
+    transition: width 0.45s cubic-bezier(.22,.61,.36,1);
+
+    z-index: 0;
+}
+
+
+/* BUTTON CONTENT ABOVE ANIMATION */
+
+.rv-home-product-card .rv-product-wa span {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ARROW */
+
+.rv-home-product-card .rv-product-wa-arrow {
+    font-size: 22px;
+    line-height: 1;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+/* HOVER */
+
+.rv-home-product-card .rv-product-wa:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.rv-home-product-card .rv-product-wa:hover::before {
+    width: 100%;
+}
+
+.rv-home-product-card .rv-product-wa:hover .rv-product-wa-arrow {
+    transform: translateX(6px);
+}
+
+
+/* PRODUCT IMAGE HOVER */
+
+.rv-home-product-card .rv-product-media img {
+    transition:
+        transform 0.7s cubic-bezier(.22,.61,.36,1);
+}
+
+.rv-home-product-card:hover .rv-product-media img {
+    transform: scale(1.035);
+}
+
+
+/* NEW BADGE */
+
+.rv-home-product-card .rv-product-badge {
+    position: absolute;
+
+    top: 16px;
+    left: 16px;
+
+    z-index: 2;
+
+    padding: 9px 13px;
+
+    background: #fff;
+    color: #211d1b;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAKE ALL HOME PRODUCT BUTTONS SAME HEIGHT
+   ========================================================= */
+
+.rv-home-product-card .rv-product-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .rv-home-product-card .rv-product-title {
+        min-height: auto;
+    }
+
+    .rv-home-product-card .rv-product-wa {
+        min-height: 56px;
+        padding: 0 17px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+}
+/* =========================================================
+   RANIVASTRA FAQ
+   Premium Accordion
+   ========================================================= */
+
+.rv-faq-page {
+    padding-bottom: 110px;
+}
+
+.rv-page-intro {
+    max-width: 620px;
+    margin: 20px auto 0;
+    text-align: center;
+    opacity: .72;
+    line-height: 1.8;
+}
+
+
+.rv-faq-list {
+    max-width: 850px;
+    margin: 60px auto 0;
+}
+
+
+/* FAQ CARD */
+
+.rv-faq-item {
+    position: relative;
+
+    margin-bottom: 14px;
+
+    border: 1px solid rgba(33,29,27,.12);
+
+    background: rgba(255,255,255,.55);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+
+/* HOVER */
+
+.rv-faq-item:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(168,120,130,.45);
+
+    box-shadow:
+        0 15px 40px rgba(33,29,27,.08);
+}
+
+
+/* QUESTION */
+
+.rv-faq-item summary {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 25px 28px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #211d1b;
+}
+
+
+/* REMOVE DEFAULT ARROW */
+
+.rv-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* PLUS */
+
+.rv-faq-item summary span {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid rgba(33,29,27,.15);
+
+    border-radius: 50%;
+
+    font-size: 20px;
+    font-weight: 300;
+
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+
+/* OPEN STATE */
+
+.rv-faq-item[open] summary span {
+    transform: rotate(45deg);
+
+    background: #a87882;
+
+    color: #fff;
+
+    border-color: #a87882;
+}
+
+
+/* ANSWER */
+
+.rv-faq-answer {
+    padding: 0 28px 28px;
+
+    color: rgba(33,29,27,.72);
+
+    line-height: 1.85;
+}
+
+
+.rv-faq-answer p {
+    margin: 0;
+}
+
+
+/* BUTTON */
+
+.rv-faq-button {
+    display: inline-flex;
+
+    margin-top: 22px;
+
+    text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .rv-faq-list {
+        margin-top: 40px;
+    }
+
+    .rv-faq-item summary {
+        padding: 21px 18px;
+
+        font-size: 14px;
+    }
+
+    .rv-faq-answer {
+        padding: 0 18px 22px;
+
+        font-size: 14px;
+    }
+
+    .rv-faq-item summary span {
+        width: 28px;
+        height: 28px;
+    }
+
+}
+
+/* =========================================================
+   RANIVASTRA FAQ - CLEAN OPEN STATE
+   ========================================================= */
+
+.rv-faq-item {
+    overflow: hidden;
+}
+
+.rv-faq-answer {
+    animation: rvFaqOpen 0.35s ease;
+}
+
+@keyframes rvFaqOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   RANIVASTRA FAQ - PREMIUM ANSWER ANIMATION
+   ========================================================= */
+
+.rv-faq-answer {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.rv-faq-item[open] .rv-faq-answer {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================================================
+   RANIVASTRA - HIDE DUPLICATE WOOCOMMERCE QUANTITY
+   ========================================================= */
+
+.single-product form.cart .quantity {
+    display: none !important;
+}
+/* =========================================================
+   RANIVASTRA - HIDE DEFAULT WOOCOMMERCE QUANTITY
+   Keep WooCommerce quantity functional but invisible.
+   ========================================================= */
+
+.single-product form.cart .quantity {
+    display: none !important;
+}
+/* =========================================================
+   RANIVASTRA - HIDE DEFAULT STOCK TEXT
+   ========================================================= */
+
+.single-product .stock {
+    display: none !important;
+}
+/* =========================================================
+   RANIVASTRA - HIDE DUPLICATE WOOCOMMERCE UI
+   ========================================================= */
+
+/* Hide WooCommerce's duplicate quantity selector */
+.single-product form.cart .quantity {
+    display: none !important;
+}
+
+/* Hide WooCommerce's duplicate stock message */
+.single-product .stock {
+    display: none !important;
+}
