@@ -20,13 +20,13 @@ License: GNU General Public License v2 or later
 .rv-hero-media{position:relative;min-height:660px}.rv-hero-media:before{content:"";position:absolute;inset:28px -28px -28px 28px;border:1px solid var(--rv-line);z-index:0}.rv-hero-media img,.rv-hero-placeholder{position:relative;z-index:1;width:100%;height:660px;object-fit:cover;background:#ddd4cc}.rv-hero-float{position:absolute;z-index:2;bottom:34px;left:-28px;background:#fffdf9;padding:16px 18px;border:1px solid var(--rv-line);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
 .rv-section{padding:110px 0}.rv-section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.rv-section-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rv-accent);margin:0 0 9px}.rv-section-title{font-size:clamp(40px,5vw,64px);line-height:1;margin:0}.rv-section-link{font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--rv-text);padding-bottom:4px}
 .rv-category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.rv-category-card{position:relative;min-height:390px;overflow:hidden;background:#d8d0c9}.rv-category-card img{width:100%;height:100%;object-fit:cover;transition:transform 900ms cubic-bezier(.2,.65,.2,1)}.rv-category-card:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,17,15,.55),rgba(20,17,15,0) 60%)}.rv-category-card:hover img{transform:scale(1.055)}.rv-category-content{position:absolute;z-index:2;left:24px;right:24px;bottom:23px;color:#fff}.rv-category-content h3{font-size:31px;margin:0 0 3px}.rv-category-content p{margin:0;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
-.rv-product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.rv-product-card{position:relative}.rv-product-media{position:relative;aspect-ratio:3/4;overflow:hidden;background:#e9e1da}.rv-product-media img{width:100%;height:100%;object-fit:cover;transition:transform 650ms cubic-bezier(.2,.65,.2,1)}.rv-product-card:hover .rv-product-media img{transform:scale(1.045)}.rv-product-badge{position:absolute;left:12px;top:12px;z-index:2;background:#fff;padding:6px 8px;font-size:9px;letter-spacing:.11em;text-transform:uppercase}.rv-product-info{padding:14px 2px 0}.rv-product-title{margin:0 0 3px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:500}.rv-product-price{font-size:13px;color:var(--rv-muted)}.rv-product-wa{margin-top:11px;display:inline-flex;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rv-accent)}
+.rv-product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.rv-product-card{position:relative}.rv-product-media{position:relative;aspect-ratio:3/4;overflow:hidden;background:#e9e1da}.rv-product-media img{width:100%;height:100%;object-fit:cover;transition:transform 650ms cubic-bezier(.2,.65,.2,1)}.rv-product-card:hover .rv-product-media img{transform:scale(1.045)}.rv-product-badge{position:absolute;left:12px;top:12px;z-index:2;background:#fff;padding:6px 8px;font-size:9px;letter-spacing:.11em;text-transform:uppercase}.rv-product-info{padding:14px 2px 0}.rv-product-title{margin:0 0 3px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:500}.rv-product-price{font-size:13px;color:var(--rv-muted)}
 .rv-story{background:#efe9e3}.rv-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.rv-story-media img{width:100%;aspect-ratio:4/5;object-fit:cover}.rv-story-copy{max-width:560px}.rv-story-copy p{color:var(--rv-muted);font-size:17px}.rv-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}.rv-point strong{display:block;font-family:Georgia,serif;font-weight:500;font-size:22px;margin-bottom:5px}.rv-point span{font-size:12px;color:var(--rv-muted)}
 .rv-reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.rv-review{padding:28px;background:#fff;border:1px solid var(--rv-line)}.rv-stars{letter-spacing:.18em;color:var(--rv-accent);font-size:12px;margin-bottom:15px}.rv-review p{margin:0 0 14px;color:#514944}.rv-review cite{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-style:normal;color:var(--rv-muted)}
 .rv-cta{padding:92px 0;background:var(--rv-dark);color:#fff}.rv-cta-inner{text-align:center;max-width:720px}.rv-cta .rv-section-kicker{color:#d3ad9c}.rv-cta h2{font-size:clamp(42px,5vw,70px);line-height:1;margin:0 0 18px}.rv-cta p{color:#d6d0cb;max-width:560px;margin:0 auto 28px}
 .rv-footer{padding:70px 0 26px;background:#171412;color:#d8d0ca}.rv-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}.rv-footer h3{color:#fff;font-size:19px;margin:0 0 14px}.rv-footer p{margin:0;color:#aaa19b;font-size:13px}.rv-footer ul{margin:0;padding:0;list-style:none}.rv-footer li{margin:0 0 9px}.rv-footer a{font-size:12px;color:#bdb5af}.rv-footer a:hover{color:#fff}.rv-footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #302a26;margin-top:45px;padding-top:20px;font-size:11px;color:#8d8580}
 .rv-page{padding:80px 0 110px}.rv-page-header{margin-bottom:42px}.rv-page h1{font-size:clamp(48px,7vw,84px);line-height:.95;margin:0 0 14px}.rv-content{max-width:900px}.rv-content p,.rv-content li{color:#5f5751}.rv-content h2,.rv-content h3{margin-top:38px}
-.rv-shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.rv-single-product{padding:70px 0 100px}.rv-single-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:start}.rv-single-media img{width:100%;object-fit:cover}.rv-single-summary .product_title{font-family:Georgia,serif;font-size:54px;line-height:1.02;margin:0 0 12px}.rv-single-summary .price{font-size:19px;color:var(--rv-muted);margin-bottom:18px}.rv-single-summary .woocommerce-product-details__short-description{color:var(--rv-muted)}.rv-single-summary .product_meta{font-size:11px;color:var(--rv-muted)}.rv-wa-product{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:0 20px;background:#218f5b;color:#fff;margin-top:10px;letter-spacing:.08em;text-transform:uppercase;font-size:10px}.rv-wa-product:hover{background:#1a734a;color:#fff}
+.rv-shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.rv-single-product{padding:70px 0 100px}.rv-single-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:start}.rv-single-media img{width:100%;object-fit:cover}.rv-single-summary .product_title{font-family:Georgia,serif;font-size:54px;line-height:1.02;margin:0 0 12px}.rv-single-summary .price{font-size:19px;color:var(--rv-muted);margin-bottom:18px}.rv-single-summary .woocommerce-product-details__short-description{color:var(--rv-muted)}.rv-single-summary .product_meta{font-size:11px;color:var(--rv-muted)}
 .rv-mobile-panel{position:fixed;inset:0 0 0 auto;width:min(380px,88vw);background:var(--rv-paper);z-index:3000;transform:translateX(100%);transition:transform .35s ease;box-shadow:-20px 0 60px rgba(0,0,0,.12);padding:24px}.rv-mobile-panel.open{transform:translateX(0)}.rv-mobile-close{display:flex;margin-left:auto}.rv-mobile-nav{display:grid;gap:4px;margin-top:35px}.rv-mobile-nav a{font-family:Georgia,serif;font-size:31px;padding:10px 0;border-bottom:1px solid var(--rv-line)}.rv-overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:2500;opacity:0;pointer-events:none;transition:opacity .3s ease}.rv-overlay.open{opacity:1;pointer-events:auto}
 .rv-reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.65,.2,1)}.rv-reveal.is-visible{opacity:1;transform:none}.rv-image-reveal{overflow:hidden}.rv-image-reveal img{transform:scale(1.08);transition:transform 1.2s cubic-bezier(.2,.65,.2,1)}.rv-image-reveal.is-visible img{transform:scale(1)}
 @media (max-width:1040px){.rv-header-inner{grid-template-columns:auto auto;justify-content:space-between}.rv-nav{display:none}.rv-menu-btn{display:grid}.rv-head-actions .rv-wa-btn{display:none}.rv-hero-grid,.rv-story-grid,.rv-single-grid{grid-template-columns:1fr}.rv-hero-media{min-height:600px}.rv-hero-media img,.rv-hero-placeholder{height:600px}.rv-product-grid,.rv-shop-grid{grid-template-columns:repeat(2,1fr)}.rv-footer-grid{grid-template-columns:repeat(2,1fr)}}
@@ -454,11 +454,6 @@ button {
         font-size: 12px;
     }
 
-    .rv-product-wa {
-        font-size: 9px;
-        letter-spacing: .08em;
-    }
-
 
     /* STORY */
     .rv-story-grid {
@@ -598,10 +593,6 @@ button {
 
     .rv-product-title {
         font-size: 12px;
-    }
-
-    .rv-product-wa {
-        font-size: 8px;
     }
 }
 /* =====================================================
@@ -995,121 +986,6 @@ main,
 
 
 /* ---------------------------------------------------------
-   REMOVE DEFAULT PURCHASE ELEMENTS
-   --------------------------------------------------------- */
-
-.rv-single-summary form.cart,
-.rv-single-summary .quantity,
-.rv-single-summary .single_add_to_cart_button,
-.rv-single-summary .stock,
-.rv-single-summary .woocommerce-variation-availability {
-
-    display: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   WHATSAPP BUTTON
-   --------------------------------------------------------- */
-
-.rv-single-summary .rv-wa-product {
-
-    width: 100%;
-
-    max-width: 430px;
-
-    min-height: 56px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    position: relative;
-
-    background: #218f5b;
-
-    color: #fff;
-
-    border: 1px solid #218f5b;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    font-size: 10px;
-
-    font-weight: 600;
-
-    letter-spacing: .13em;
-
-    text-transform: uppercase;
-
-    overflow: hidden;
-
-    transition:
-        transform .35s cubic-bezier(.2,.65,.2,1),
-        box-shadow .35s ease,
-        background .35s ease;
-}
-
-
-/* Moving shine */
-
-.rv-single-summary .rv-wa-product::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-
-    width: 90px;
-
-    background:
-        linear-gradient(
-            100deg,
-            transparent,
-            rgba(255,255,255,.25),
-            transparent
-        );
-
-    transform: translateX(-150px) skewX(-18deg);
-
-    transition:
-        transform .7s ease;
-}
-
-
-/* Hover */
-
-.rv-single-summary .rv-wa-product:hover {
-
-    background: #176f48;
-
-    border-color: #176f48;
-
-    color: #fff;
-
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 18px 35px rgba(33,143,91,.20);
-}
-
-
-.rv-single-summary .rv-wa-product:hover::before {
-
-    transform:
-        translateX(500px) skewX(-18deg);
-}
-
-
-/* ---------------------------------------------------------
    PRODUCT META
    --------------------------------------------------------- */
 
@@ -1320,12 +1196,6 @@ main,
         font-size: 14px;
 
         line-height: 1.7;
-    }
-
-    .rv-single-summary
-    .rv-wa-product {
-
-        max-width: 100%;
     }
 
     .single-product .related.products {
@@ -1547,133 +1417,6 @@ main,
 
 
 /* =========================================================
-   PREMIUM WHATSAPP BUTTON
-   ========================================================= */
-
-.rv-wa-product-premium {
-    position: relative;
-
-    width: 100%;
-    max-width: 430px;
-
-    min-height: 58px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 13px;
-
-    overflow: hidden;
-
-    background: #218f5b;
-
-    border: 1px solid #218f5b;
-
-    color: #fff;
-
-    font-size: 10px;
-    font-weight: 600;
-
-    letter-spacing: .14em;
-    text-transform: uppercase;
-
-    transition:
-        transform .4s cubic-bezier(.2,.65,.2,1),
-        box-shadow .4s ease,
-        color .3s ease;
-}
-
-
-/* Left-to-right fill layer */
-
-.rv-wa-product-premium::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: #a85d72;
-
-    transform:
-        translateX(-101%);
-
-    transition:
-        transform .55s cubic-bezier(.77,0,.18,1);
-
-    z-index: 0;
-}
-
-
-/* subtle shine */
-
-.rv-wa-product-premium::after {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-
-    left: -40%;
-
-    width: 25%;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,255,255,.20),
-            transparent
-        );
-
-    transform: skewX(-20deg);
-
-    transition:
-        left .8s ease;
-
-    z-index: 2;
-}
-
-.rv-wa-product-premium:hover::before {
-    transform:
-        translateX(0);
-}
-
-.rv-wa-product-premium:hover::after {
-    left: 125%;
-}
-
-.rv-wa-product-premium:hover {
-    color: #fff;
-
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 18px 38px rgba(168,93,114,.20);
-}
-
-.rv-wa-label,
-.rv-wa-arrow {
-    position: relative;
-    z-index: 3;
-}
-
-.rv-wa-arrow {
-    font-size: 16px;
-
-    transition:
-        transform .35s cubic-bezier(.2,.65,.2,1);
-}
-
-.rv-wa-product-premium:hover .rv-wa-arrow {
-    transform:
-        translateX(5px);
-}
-
-
-/* =========================================================
    PRODUCT PRICE REFINEMENT
    ========================================================= */
 
@@ -1779,11 +1522,6 @@ main,
 
     .rv-quantity-row {
         max-width: none;
-    }
-
-    .rv-wa-product-premium {
-        max-width: none;
-        min-height: 56px;
     }
 
     .rv-single-summary .price ins {
@@ -2047,79 +1785,6 @@ main,
 }
 
 
-/* =========================================================
-   PREMIUM WHATSAPP BUTTON
-   ========================================================= */
-
-.rv-wa-product-premium {
-    position: relative;
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    width: 100%;
-    min-height: 58px;
-    padding: 0 21px;
-    overflow: hidden;
-    border-radius: 13px;
-    text-decoration: none !important;
-    background: #241f19;
-    color: #fff !important;
-    border: 1px solid #241f19;
-    isolation: isolate;
-    transition:
-        transform .35s cubic-bezier(.2,.8,.2,1),
-        box-shadow .35s ease;
-}
-
-
-/* Animated fill */
-
-.rv-wa-product-premium::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    width: 0;
-    background: #6f542d;
-    z-index: -1;
-    transition:
-        width .45s cubic-bezier(.2,.8,.2,1);
-}
-
-.rv-wa-product-premium:hover::before {
-    width: 100%;
-}
-
-.rv-wa-product-premium:hover {
-    transform: translateY(-3px);
-    box-shadow:
-        0 14px 30px rgba(60,45,30,.20);
-}
-
-.rv-wa-label,
-.rv-wa-arrow {
-    position: relative;
-    z-index: 2;
-}
-
-.rv-wa-label {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-}
-
-.rv-wa-arrow {
-    font-size: 23px;
-    transition:
-        transform .35s ease;
-}
-
-.rv-wa-product-premium:hover .rv-wa-arrow {
-    transform: translateX(6px);
-}
-
-
 /* Mobile */
 
 @media (max-width: 767px) {
@@ -2175,7 +1840,7 @@ main,
     transform: translateY(-7px);
 }
 /* =========================================================
-   NEW ARRIVALS - PRICE + WHATSAPP FIX
+   NEW ARRIVALS - PRICE FIX
    ========================================================= */
 
 .rv-product-info {
@@ -2209,20 +1874,6 @@ main,
 
 .rv-product-price ins {
     text-decoration: none;
-}
-
-.rv-product-wa {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 48px;
-    padding: 12px 16px;
-    margin-top: 4px;
-    box-sizing: border-box;
-    visibility: visible !important;
-    opacity: 1 !important;
-    text-decoration: none !important;
 }
 /* =========================================================
    RANIVASTRA - NEW ARRIVALS PRODUCT GRID FIX
@@ -2365,93 +2016,6 @@ main,
 }
 
 
-/* WHATSAPP BUTTON */
-
-.rv-new-arrivals-page .rv-new-product-wa {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-    min-height: 48px;
-
-    padding: 0 16px;
-
-    overflow: hidden;
-
-    background: #211d1b;
-    color: #fff;
-
-    text-decoration: none;
-
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-
-    border: 0;
-
-    transition:
-        color .35s ease,
-        transform .3s ease,
-        box-shadow .35s ease;
-}
-
-
-/* LEFT TO RIGHT HOVER FILL */
-
-.rv-new-arrivals-page .rv-new-product-wa::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    width: 0;
-
-    background: #a87582;
-
-    transition: width .45s cubic-bezier(.2,.7,.2,1);
-
-    z-index: 0;
-}
-
-
-.rv-new-arrivals-page .rv-new-product-wa:hover::before {
-    width: 100%;
-}
-
-
-.rv-new-arrivals-page .rv-new-product-wa span,
-.rv-new-arrivals-page .rv-new-product-wa strong {
-    position: relative;
-    z-index: 1;
-}
-
-
-.rv-new-arrivals-page .rv-new-product-wa strong {
-    font-size: 17px;
-    font-weight: 400;
-
-    transition: transform .35s ease;
-}
-
-
-.rv-new-arrivals-page .rv-new-product-wa:hover {
-    color: #fff;
-    transform: translateY(-3px);
-
-    box-shadow: 0 12px 25px rgba(33, 29, 27, .14);
-}
-
-
-.rv-new-arrivals-page .rv-new-product-wa:hover strong {
-    transform: translateX(5px);
-}
-
-
 /* EMPTY STATE */
 
 .rv-new-arrivals-page .rv-empty-products {
@@ -2497,12 +2061,6 @@ main,
         font-size: 14px;
     }
 
-    .rv-new-arrivals-page .rv-new-product-wa {
-        min-height: 43px;
-        padding: 0 11px;
-        font-size: 9px;
-    }
-
 }
 
 
@@ -2537,12 +2095,6 @@ main,
 }
 
 
-/* Push WhatsApp button to the same bottom position */
-.rv-new-arrivals-page .rv-new-product-wa {
-    margin-top: auto;
-}
-
-
 /* Make every card's information area equal */
 .rv-new-arrivals-page .rv-new-product-card {
     display: flex;
@@ -2558,7 +2110,7 @@ main,
 
 }
 /* =========================================================
-   RANIVASTRA - ARCHIVE WHATSAPP BUTTON
+   RANIVASTRA - ARCHIVE PRODUCT CARD ALIGNMENT
    SHOP + PRODUCT CATEGORIES
    ========================================================= */
 
@@ -2581,103 +2133,6 @@ main,
     min-height: 24px;
     margin-bottom: 16px;
 }
-
-
-/* WhatsApp button */
-
-.woocommerce ul.products li.product .rv-archive-product-wa {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-    min-height: 48px;
-
-    padding: 0 16px;
-
-    overflow: hidden;
-
-    background: #211d1b;
-    color: #fff;
-
-    text-decoration: none;
-
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-
-    box-sizing: border-box;
-
-    transition:
-        transform .3s ease,
-        color .35s ease,
-        box-shadow .35s ease;
-}
-
-
-/* Animated left → right fill */
-
-.woocommerce ul.products li.product .rv-archive-product-wa::before {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 0;
-    bottom: 0;
-
-    width: 0;
-
-    background: #a87582;
-
-    transition:
-        width .45s cubic-bezier(.2,.7,.2,1);
-
-    z-index: 0;
-}
-
-
-.woocommerce ul.products li.product .rv-archive-product-wa:hover::before {
-    width: 100%;
-}
-
-
-/* Button text */
-
-.woocommerce ul.products li.product .rv-archive-product-wa span,
-.woocommerce ul.products li.product .rv-archive-product-wa strong {
-    position: relative;
-    z-index: 1;
-}
-
-
-.woocommerce ul.products li.product .rv-archive-product-wa strong {
-    font-size: 17px;
-    font-weight: 400;
-
-    transition:
-        transform .35s ease;
-}
-
-
-/* Hover */
-
-.woocommerce ul.products li.product .rv-archive-product-wa:hover {
-    color: #fff;
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 25px rgba(33, 29, 27, .14);
-}
-
-
-.woocommerce ul.products li.product .rv-archive-product-wa:hover strong {
-    transform: translateX(5px);
-}
 /* =========================================================
    ARCHIVE PRODUCT CARD ALIGNMENT
    ========================================================= */
@@ -2695,11 +2150,6 @@ main,
 
 .woocommerce ul.products li.product .price {
     min-height: 24px;
-}
-
-
-.woocommerce ul.products li.product .rv-archive-product-wa {
-    margin-top: auto;
 }
 /* =========================================================
    RANIVASTRA HOME NEW ARRIVALS
@@ -2759,93 +2209,6 @@ main,
 }
 
 
-/* WHATSAPP BUTTON */
-
-.rv-home-product-card .rv-product-wa {
-    position: relative;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-    min-height: 62px;
-
-    margin-top: auto;
-    padding: 0 22px;
-
-    background: #211d1b;
-    color: #fff;
-
-    text-decoration: none;
-
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-
-    transition:
-        color 0.35s ease,
-        transform 0.35s ease;
-}
-
-
-/* LEFT → RIGHT ANIMATION */
-
-.rv-home-product-card .rv-product-wa::before {
-    content: "";
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 0;
-    height: 100%;
-
-    background: #a87882;
-
-    transition: width 0.45s cubic-bezier(.22,.61,.36,1);
-
-    z-index: 0;
-}
-
-
-/* BUTTON CONTENT ABOVE ANIMATION */
-
-.rv-home-product-card .rv-product-wa span {
-    position: relative;
-    z-index: 1;
-}
-
-
-/* ARROW */
-
-.rv-home-product-card .rv-product-wa-arrow {
-    font-size: 22px;
-    line-height: 1;
-
-    transition:
-        transform 0.35s ease;
-}
-
-
-/* HOVER */
-
-.rv-home-product-card .rv-product-wa:hover {
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-.rv-home-product-card .rv-product-wa:hover::before {
-    width: 100%;
-}
-
-.rv-home-product-card .rv-product-wa:hover .rv-product-wa-arrow {
-    transform: translateX(6px);
-}
-
-
 /* PRODUCT IMAGE HOVER */
 
 .rv-home-product-card .rv-product-media img {
@@ -2881,7 +2244,7 @@ main,
 
 
 /* =========================================================
-   MAKE ALL HOME PRODUCT BUTTONS SAME HEIGHT
+   MAKE ALL HOME PRODUCT TITLES SAME HEIGHT
    ========================================================= */
 
 .rv-home-product-card .rv-product-title {
@@ -2900,13 +2263,6 @@ main,
 
     .rv-home-product-card .rv-product-title {
         min-height: auto;
-    }
-
-    .rv-home-product-card .rv-product-wa {
-        min-height: 56px;
-        padding: 0 17px;
-        font-size: 11px;
-        letter-spacing: 1px;
     }
 
 }
@@ -3096,22 +2452,6 @@ main,
     overflow: hidden;
 }
 
-.rv-faq-answer {
-    animation: rvFaqOpen 0.35s ease;
-}
-
-@keyframes rvFaqOpen {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* =========================================================
    RANIVASTRA FAQ - PREMIUM ANSWER ANIMATION
    ========================================================= */
@@ -3127,28 +2467,6 @@ main,
 .rv-faq-item[open] .rv-faq-answer {
     opacity: 1;
     transform: translateY(0);
-}
-/* =========================================================
-   RANIVASTRA - HIDE DUPLICATE WOOCOMMERCE QUANTITY
-   ========================================================= */
-
-.single-product form.cart .quantity {
-    display: none !important;
-}
-/* =========================================================
-   RANIVASTRA - HIDE DEFAULT WOOCOMMERCE QUANTITY
-   Keep WooCommerce quantity functional but invisible.
-   ========================================================= */
-
-.single-product form.cart .quantity {
-    display: none !important;
-}
-/* =========================================================
-   RANIVASTRA - HIDE DEFAULT STOCK TEXT
-   ========================================================= */
-
-.single-product .stock {
-    display: none !important;
 }
 /* =========================================================
    RANIVASTRA - HIDE DUPLICATE WOOCOMMERCE UI
@@ -3182,7 +2500,7 @@ main,
     color: #ffffff !important;
 
     border: 1px solid #211e1c !important;
-    border-radius: 0 !important;
+    border-radius: 12px !important;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
@@ -3192,12 +2510,23 @@ main,
 
     cursor: pointer;
 
+    position: relative;
+    overflow: hidden !important;
+    isolation: isolate;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+
     transition:
         background .35s ease,
         color .35s ease,
         border-color .35s ease,
         transform .35s cubic-bezier(.2,.65,.2,1),
         box-shadow .35s ease;
+}
+
+.single-product form.cart .single_add_to_cart_button > * {
+    position: relative;
+    z-index: 2;
 }
 
 /* Hover */
@@ -3208,8 +2537,7 @@ main,
 
     transform: translateY(-3px);
 
-    box-shadow:
-        0 14px 30px rgba(32,25,22,.14);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10) !important;
 }
 
 /* Press */
@@ -3223,6 +2551,7 @@ main,
 .single-product form.cart .single_add_to_cart_button:focus-visible {
     outline: 2px solid #a85d72;
     outline-offset: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Loading state */
@@ -3237,6 +2566,12 @@ main,
     border-color: #a85d72 !important;
 }
 
+/* Prevent the form itself from showing the animation outside */
+.single-product form.cart {
+    overflow: hidden;
+    margin: 0 !important;
+}
+
 /* Mobile */
 @media (max-width: 767px) {
 
@@ -3247,76 +2582,6 @@ main,
         letter-spacing: .12em;
     }
 
-}
-/* =========================================================
-   RANIVASTRA - ADD TO CART MATCHES WHATSAPP BUTTON
-   ========================================================= */
-
-.single-product form.cart {
-    margin: 0 !important;
-}
-/* =========================================================
-   RANIVASTRA - CONTAIN ADD TO CART HOVER ANIMATION
-   ========================================================= */
-
-.single-product form.cart .single_add_to_cart_button {
-    position: relative;
-    overflow: hidden !important;
-    isolation: isolate;
-}
-
-/* Keep the button content above the animation */
-.single-product form.cart .single_add_to_cart_button > * {
-    position: relative;
-    z-index: 2;
-}
-
-/* Prevent the form itself from showing the animation outside */
-.single-product form.cart {
-    overflow: hidden;
-}
-/* =========================================================
-   RANIVASTRA - ADD TO CART BUTTON SHAPE
-   ========================================================= */
-
-.single-product form.cart .single_add_to_cart_button {
-    border-radius: 12px !important;
-    overflow: hidden !important;
-}
-/* =========================================================
-   RANIVASTRA - SOFT ADD TO CART SHADOW
-   ========================================================= */
-
-.single-product form.cart .single_add_to_cart_button {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
-}
-
-/* Softer hover shadow */
-.single-product form.cart .single_add_to_cart_button:hover {
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10) !important;
-}
-
-/* Remove harsh focus shadow */
-.single-product form.cart .single_add_to_cart_button:focus,
-.single-product form.cart .single_add_to_cart_button:focus-visible {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
-}
-/* =========================================================
-   RANIVASTRA - ADD TO CART SHADOW TEST
-   ========================================================= */
-
-.single-product form.cart .single_add_to_cart_button,
-.single-product form.cart .single_add_to_cart_button:hover,
-.single-product form.cart .single_add_to_cart_button:focus,
-.single-product form.cart .single_add_to_cart_button:active {
-    box-shadow: none !important;
-    filter: none !important;
-}
-
-.single-product form.cart .single_add_to_cart_button::before,
-.single-product form.cart .single_add_to_cart_button::after {
-    box-shadow: none !important;
-    filter: none !important;
 }
 
 /* =========================================================
@@ -3453,1214 +2718,6 @@ main,
     color: var(--rv-text) !important;
 }
 
-
-/* =========================================================
-   NEW IN STORE — OUTER SECTION
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid {
-
-    width: min(
-        var(--rv-max, 1240px),
-        calc(100% - 48px)
-    ) !important;
-
-    max-width: var(--rv-max, 1240px) !important;
-
-    margin: 100px auto 110px !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   NEW IN STORE — HEADING
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__heading {
-
-    margin: 0 0 34px !important;
-
-    padding: 0 !important;
-
-    font-family: Georgia, "Times New Roman", serif !important;
-
-    font-size: clamp(34px, 4vw, 48px) !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.05 !important;
-
-    letter-spacing: -.035em !important;
-
-    color: var(--rv-text) !important;
-
-    text-align: left !important;
-}
-
-
-/* =========================================================
-   HORIZONTAL PRODUCT RAIL
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__products {
-
-    display: flex !important;
-
-    flex-wrap: nowrap !important;
-
-    align-items: flex-start !important;
-
-    justify-content: flex-start !important;
-
-    gap: 18px !important;
-
-    width: 100% !important;
-
-    max-width: 100% !important;
-
-    margin: 0 !important;
-
-    padding: 0 0 12px !important;
-
-    list-style: none !important;
-
-    overflow-x: auto !important;
-
-    overflow-y: hidden !important;
-
-    -webkit-overflow-scrolling: touch !important;
-
-    scrollbar-width: none !important;
-
-    cursor: grab !important;
-
-    user-select: none !important;
-
-    -webkit-user-select: none !important;
-
-    touch-action: pan-x !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* Chrome / Edge / Safari scrollbar */
-
-.woocommerce-cart .wc-block-grid__products::-webkit-scrollbar {
-
-    display: none !important;
-
-    width: 0 !important;
-
-    height: 0 !important;
-}
-
-
-/* =========================================================
-   DRAGGING
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__products.rv-is-dragging {
-
-    cursor: grabbing !important;
-
-    scroll-behavior: auto !important;
-}
-
-
-/* =========================================================
-   PRODUCT CARD
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product {
-
-    flex: 0 0
-        calc(
-            (100% - 54px) / 4
-        ) !important;
-
-    width:
-        calc(
-            (100% - 54px) / 4
-        ) !important;
-
-    max-width: none !important;
-
-    min-width: 0 !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    border: 0 !important;
-
-    background: transparent !important;
-
-    text-align: left !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   PRODUCT LINK
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-link {
-
-    display: block !important;
-
-    width: 100% !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    color: inherit !important;
-
-    text-decoration: none !important;
-}
-
-
-/* =========================================================
-   PRODUCT IMAGE
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-image {
-
-    position: relative !important;
-
-    width: 100% !important;
-
-    aspect-ratio: 3 / 4 !important;
-
-    margin: 0 0 16px !important;
-
-    padding: 0 !important;
-
-    overflow: hidden !important;
-
-    background: #f3f0ed !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   PRODUCT IMAGE
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-image img {
-
-    display: block !important;
-
-    width: 100% !important;
-
-    height: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-
-    object-fit: cover !important;
-
-    transform: scale(1) !important;
-
-    transition:
-        transform 700ms cubic-bezier(.2,.65,.2,1) !important;
-
-    pointer-events: none !important;
-}
-
-
-/* =========================================================
-   IMAGE HOVER
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product:hover
-.wc-block-grid__product-image img {
-
-    transform: scale(1.045) !important;
-}
-
-
-/* =========================================================
-   SALE BADGE
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-onsale {
-
-    position: absolute !important;
-
-    top: 12px !important;
-
-    left: 12px !important;
-
-    z-index: 5 !important;
-
-    display: block !important;
-
-    width: auto !important;
-
-    min-width: 0 !important;
-
-    margin: 0 !important;
-
-    padding: 7px 10px !important;
-
-    border: 0 !important;
-
-    border-radius: 0 !important;
-
-    background: #fff !important;
-
-    color: #111 !important;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif !important;
-
-    font-size: 9px !important;
-
-    font-weight: 600 !important;
-
-    line-height: 1 !important;
-
-    letter-spacing: .12em !important;
-
-    text-transform: uppercase !important;
-
-    box-shadow: none !important;
-}
-
-
-/* =========================================================
-   PRODUCT TITLE
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-title {
-
-    display: -webkit-box !important;
-
-    -webkit-line-clamp: 2 !important;
-
-    -webkit-box-orient: vertical !important;
-
-    overflow: hidden !important;
-
-    min-height: 40px !important;
-
-    margin: 0 0 7px !important;
-
-    padding: 0 !important;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif !important;
-
-    font-size: 14px !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.4 !important;
-
-    letter-spacing: 0 !important;
-
-    color: var(--rv-text) !important;
-
-    text-align: left !important;
-}
-
-
-/* =========================================================
-   PRICE
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-price {
-
-    min-height: 22px !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif !important;
-
-    font-size: 13px !important;
-
-    line-height: 1.5 !important;
-
-    color: var(--rv-muted) !important;
-
-    text-align: left !important;
-}
-
-
-/* OLD PRICE */
-
-.woocommerce-cart
-.wc-block-grid__product-price del {
-
-    margin-right: 5px !important;
-
-    opacity: .55 !important;
-}
-
-
-/* CURRENT PRICE */
-
-.woocommerce-cart
-.wc-block-grid__product-price ins {
-
-    color: var(--rv-text) !important;
-
-    text-decoration: none !important;
-
-    font-weight: 500 !important;
-}
-
-
-/* =========================================================
-   ADD TO CART
-   ========================================================= */
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart {
-
-    width: 100% !important;
-
-    margin: 14px 0 0 !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* BUTTON WRAPPER */
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button {
-
-    width: 100% !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-}
-
-
-/* BUTTON */
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link {
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: space-between !important;
-
-    width: 100% !important;
-
-    min-height: 46px !important;
-
-    margin: 0 !important;
-
-    padding: 0 14px 0 16px !important;
-
-    border: 1px solid var(--rv-dark) !important;
-
-    border-radius: 0 !important;
-
-    background: var(--rv-dark) !important;
-
-    color: #fff !important;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif !important;
-
-    font-size: 10px !important;
-
-    font-weight: 600 !important;
-
-    line-height: 1 !important;
-
-    letter-spacing: .12em !important;
-
-    text-transform: uppercase !important;
-
-    text-decoration: none !important;
-
-    box-shadow: none !important;
-
-    box-sizing: border-box !important;
-
-    transition:
-        transform .4s cubic-bezier(.2,.65,.2,1),
-        background .4s ease,
-        color .4s ease,
-        border-color .4s ease !important;
-}
-
-
-/* BUTTON ARROW */
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link::after {
-
-    content: "→" !important;
-
-    display: inline-block !important;
-
-    margin-left: 12px !important;
-
-    font-size: 15px !important;
-
-    font-weight: 400 !important;
-
-    transition:
-        transform .4s cubic-bezier(.2,.65,.2,1) !important;
-}
-
-
-/* BUTTON HOVER */
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link:hover {
-
-    background: transparent !important;
-
-    color: var(--rv-dark) !important;
-
-    border-color: var(--rv-dark) !important;
-
-    transform: translateY(-2px) !important;
-}
-
-
-/* ARROW HOVER */
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link:hover::after {
-
-    transform: translateX(5px) !important;
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
-    .woocommerce-cart .wc-block-grid {
-
-        width: 100% !important;
-
-        padding-left: 24px !important;
-
-        padding-right: 24px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product {
-
-        flex: 0 0
-            calc(
-                (100vw - 48px - 36px) / 3
-            ) !important;
-
-        width:
-            calc(
-                (100vw - 48px - 36px) / 3
-            ) !important;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 767px) {
-
-    .woocommerce-cart .cart-empty {
-
-        width: calc(100% - 28px) !important;
-
-        padding: 80px 10px 15px !important;
-
-        font-size:
-            clamp(36px, 11vw, 52px) !important;
-    }
-
-
-    .woocommerce-cart
-    .return-to-shop {
-
-        margin-top: 24px !important;
-    }
-
-
-    .woocommerce-cart
-    .return-to-shop
-    a.button {
-
-        min-height: 50px !important;
-
-        width:
-            min(
-                320px,
-                calc(100% - 28px)
-            ) !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid {
-
-        width: 100% !important;
-
-        margin-top: 75px !important;
-
-        margin-bottom: 75px !important;
-
-        padding-left: 18px !important;
-
-        padding-right: 0 !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__heading {
-
-        margin-bottom: 25px !important;
-
-        font-size:
-            clamp(
-                32px,
-                10vw,
-                44px
-            ) !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__products {
-
-        gap: 14px !important;
-
-        padding-right: 18px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product {
-
-        flex: 0 0
-            calc(
-                (100vw - 36px - 14px) / 2
-            ) !important;
-
-        width:
-            calc(
-                (100vw - 36px - 14px) / 2
-            ) !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-title {
-
-        font-size: 13px !important;
-
-        min-height: 38px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-price {
-
-        font-size: 12px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-add-to-cart
-    .wp-block-button__link {
-
-        min-height: 43px !important;
-
-        padding: 0 11px !important;
-
-        font-size: 8px !important;
-
-        letter-spacing: .08em !important;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 560px) {
-
-    .woocommerce-cart
-    .wc-block-grid {
-
-        margin-top: 60px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__heading {
-
-        font-size: 34px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__products {
-
-        gap: 12px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product {
-
-        flex: 0 0 78% !important;
-
-        width: 78% !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-title {
-
-        font-size: 13px !important;
-
-        min-height: 38px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-price {
-
-        font-size: 12px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-add-to-cart
-    .wp-block-button__link {
-
-        min-height: 42px !important;
-
-        font-size: 9px !important;
-    }
-
-}
-
-/* =========================================================
-   RANIVASTRA CART — NEW IN STORE CAROUSEL
-   FINAL OVERRIDE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid {
-    width: 100% !important;
-    max-width: 1240px !important;
-    margin: 90px auto 100px !important;
-    padding: 0 24px !important;
-    box-sizing: border-box !important;
-}
-
-
-/* Heading */
-
-.woocommerce-cart .wc-block-grid__heading {
-    margin: 0 0 30px !important;
-    padding: 0 !important;
-
-    font-family: Georgia, "Times New Roman", serif !important;
-    font-size: clamp(34px, 4vw, 50px) !important;
-    font-weight: 500 !important;
-    line-height: 1.05 !important;
-    letter-spacing: -0.035em !important;
-
-    text-align: left !important;
-}
-
-
-/* =========================================================
-   HORIZONTAL SCROLL AREA
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__products {
-
-    display: flex !important;
-
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-
-    gap: 20px !important;
-
-    width: 100% !important;
-    max-width: 100% !important;
-
-    margin: 0 !important;
-    padding: 0 0 15px !important;
-
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-
-    list-style: none !important;
-
-    -webkit-overflow-scrolling: touch !important;
-
-    scrollbar-width: none !important;
-
-    cursor: grab !important;
-
-    user-select: none !important;
-    -webkit-user-select: none !important;
-
-    touch-action: pan-x !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* Hide scrollbar */
-
-.woocommerce-cart .wc-block-grid__products::-webkit-scrollbar {
-    display: none !important;
-    width: 0 !important;
-    height: 0 !important;
-}
-
-
-/* =========================================================
-   PRODUCT CARD
-   ========================================================= */
-
-/* =========================================================
-   DESKTOP PRODUCT CARD WIDTH
-   4 CARDS VISIBLE + MORE CARDS HIDDEN TO THE RIGHT
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product {
-
-    display: flex !important;
-    flex-direction: column !important;
-
-    flex: 0 0 calc((100% - 54px) / 4) !important;
-
-    width: calc((100% - 54px) / 4) !important;
-
-    max-width: calc((100% - 54px) / 4) !important;
-
-    min-width: calc((100% - 54px) / 4) !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border: 0 !important;
-
-    background: transparent !important;
-
-    text-align: left !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   IMAGE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product-image {
-
-    position: relative !important;
-
-    width: 100% !important;
-    height: 380px !important;
-
-    margin: 0 0 16px !important;
-    padding: 0 !important;
-
-    overflow: hidden !important;
-
-    background: #f3f0ed !important;
-
-    box-sizing: border-box !important;
-}
-
-
-.woocommerce-cart .wc-block-grid__product-image img {
-
-    display: block !important;
-
-    width: 100% !important;
-    height: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-
-    object-fit: cover !important;
-
-    transform: scale(1) !important;
-
-    transition:
-        transform 700ms cubic-bezier(.2,.65,.2,1) !important;
-
-    pointer-events: none !important;
-}
-
-
-.woocommerce-cart
-.wc-block-grid__product:hover
-.wc-block-grid__product-image img {
-
-    transform: scale(1.045) !important;
-}
-
-
-/* =========================================================
-   SALE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product-onsale {
-
-    position: absolute !important;
-
-    top: 12px !important;
-    left: 12px !important;
-
-    z-index: 5 !important;
-
-    margin: 0 !important;
-    padding: 7px 10px !important;
-
-    background: #fff !important;
-    color: #111 !important;
-
-    border: 0 !important;
-    border-radius: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 9px !important;
-    font-weight: 600 !important;
-
-    letter-spacing: .12em !important;
-    line-height: 1 !important;
-
-    text-transform: uppercase !important;
-}
-
-
-/* =========================================================
-   TITLE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product-title {
-
-    min-height: 40px !important;
-
-    margin: 0 0 7px !important;
-    padding: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 14px !important;
-    font-weight: 500 !important;
-
-    line-height: 1.4 !important;
-
-    color: var(--rv-text, #171717) !important;
-
-    text-align: left !important;
-}
-
-
-/* =========================================================
-   PRICE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product-price {
-
-    min-height: 22px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 13px !important;
-
-    line-height: 1.5 !important;
-
-    color: var(--rv-muted, #777) !important;
-
-    text-align: left !important;
-}
-
-
-.woocommerce-cart .wc-block-grid__product-price del {
-    margin-right: 5px !important;
-    opacity: .55 !important;
-}
-
-
-.woocommerce-cart .wc-block-grid__product-price ins {
-
-    color: var(--rv-text, #171717) !important;
-
-    text-decoration: none !important;
-
-    font-weight: 500 !important;
-}
-
-
-/* =========================================================
-   ADD TO CART
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product-add-to-cart {
-
-    width: 100% !important;
-
-    margin: 14px 0 0 !important;
-    padding: 0 !important;
-}
-
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button {
-
-    width: 100% !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link {
-
-    display: flex !important;
-
-    align-items: center !important;
-    justify-content: space-between !important;
-
-    width: 100% !important;
-    min-height: 46px !important;
-
-    margin: 0 !important;
-    padding: 0 14px 0 16px !important;
-
-    background: var(--rv-dark, #171717) !important;
-    color: #fff !important;
-
-    border: 1px solid var(--rv-dark, #171717) !important;
-    border-radius: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 10px !important;
-    font-weight: 600 !important;
-
-    letter-spacing: .12em !important;
-
-    text-transform: uppercase !important;
-
-    text-decoration: none !important;
-
-    box-sizing: border-box !important;
-
-    transition:
-        background .35s ease,
-        color .35s ease,
-        transform .35s ease !important;
-}
-
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link::after {
-
-    content: "→" !important;
-
-    font-size: 15px !important;
-
-    font-weight: 400 !important;
-
-    transition: transform .35s ease !important;
-}
-
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link:hover {
-
-    background: transparent !important;
-
-    color: var(--rv-dark, #171717) !important;
-
-    transform: translateY(-2px) !important;
-}
-
-
-.woocommerce-cart
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link:hover::after {
-
-    transform: translateX(5px) !important;
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
-    .woocommerce-cart .wc-block-grid {
-        padding-left: 24px !important;
-        padding-right: 24px !important;
-    }
-
-    .woocommerce-cart .wc-block-grid__product {
-
-        flex-basis: 280px !important;
-
-        width: 280px !important;
-
-        max-width: 280px !important;
-
-        min-width: 280px !important;
-    }
-
-    .woocommerce-cart .wc-block-grid__product-image {
-        height: 373px !important;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 767px) {
-
-    .woocommerce-cart .wc-block-grid {
-
-        margin-top: 65px !important;
-        margin-bottom: 70px !important;
-
-        padding-left: 18px !important;
-        padding-right: 0 !important;
-    }
-
-
-    .woocommerce-cart .wc-block-grid__heading {
-
-        margin-bottom: 24px !important;
-
-        font-size: clamp(32px, 10vw, 44px) !important;
-    }
-
-
-    .woocommerce-cart .wc-block-grid__products {
-
-        gap: 14px !important;
-
-        padding-right: 18px !important;
-    }
-
-
-    .woocommerce-cart .wc-block-grid__product {
-
-        flex: 0 0 78vw !important;
-
-        width: 78vw !important;
-
-        max-width: 78vw !important;
-
-        min-width: 78vw !important;
-    }
-
-
-    .woocommerce-cart .wc-block-grid__product-image {
-
-        height: auto !important;
-
-        aspect-ratio: 3 / 4 !important;
-    }
-
-
-    .woocommerce-cart .wc-block-grid__product-title {
-
-        font-size: 13px !important;
-
-        min-height: 38px !important;
-    }
-
-
-    .woocommerce-cart .wc-block-grid__product-price {
-
-        font-size: 12px !important;
-    }
-
-
-    .woocommerce-cart
-    .wc-block-grid__product-add-to-cart
-    .wp-block-button__link {
-
-        min-height: 43px !important;
-
-        font-size: 8px !important;
-
-        padding-left: 11px !important;
-        padding-right: 11px !important;
-    }
-}
-
 /* =========================================================
    RANIVASTRA — CART PAGE FULL WIDTH FIX
    ========================================================= */
@@ -4729,123 +2786,24 @@ body.woocommerce-cart .wc-block-cart__empty-cart {
     margin-right: auto !important;
 }
 
-
 /* =========================================================
-   NEW IN STORE — FULL AVAILABLE WIDTH
+   RANIVASTRA — EMPTY CART
+   REDUCE ICON + TITLE SIZE
    ========================================================= */
 
-body.woocommerce-cart .wc-block-grid {
-    width: 100% !important;
-    max-width: none !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    padding-left: 5vw !important;
-    padding-right: 5vw !important;
-
-    box-sizing: border-box !important;
+/* Empty cart icon */
+.woocommerce-cart .wc-block-cart__empty-cart__title::before {
+    font-size: 28px !important;
 }
 
-
-/* Heading */
-body.woocommerce-cart .wc-block-grid__heading {
-    width: 100% !important;
-    max-width: none !important;
+/* Empty cart title */
+.woocommerce-cart .wc-block-cart__empty-cart__title {
+    font-size: clamp(24px, 3vw, 30px) !important;
 }
 
-
-/* =========================================================
-   PRODUCT CAROUSEL
-   ========================================================= */
-
-body.woocommerce-cart .wc-block-grid__products {
-    width: 100% !important;
-    max-width: none !important;
-
-    display: flex !important;
-    flex-wrap: nowrap !important;
-
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-
-    gap: 20px !important;
-
-    margin: 0 !important;
-    padding: 0 0 12px !important;
-
-    box-sizing: border-box !important;
+.woocommerce-cart .wc-block-grid {
+    display: none !important;
 }
-
-
-/* Desktop — exactly 4 cards visible */
-body.woocommerce-cart .wc-block-grid__product {
-    flex: 0 0 calc((100% - 60px) / 4) !important;
-
-    width: calc((100% - 60px) / 4) !important;
-
-    max-width: none !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   LARGE DESKTOP
-   ========================================================= */
-
-@media (min-width: 1400px) {
-
-    body.woocommerce-cart .wc-block-grid {
-        padding-left: 4vw !important;
-        padding-right: 4vw !important;
-    }
-
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
-    body.woocommerce-cart .wc-block-grid {
-        padding-left: 24px !important;
-        padding-right: 24px !important;
-    }
-
-    body.woocommerce-cart .wc-block-grid__product {
-        flex: 0 0 calc((100% - 40px) / 3) !important;
-        width: calc((100% - 40px) / 3) !important;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 767px) {
-
-    body.woocommerce-cart .wc-block-grid {
-        padding-left: 18px !important;
-        padding-right: 0 !important;
-    }
-
-    body.woocommerce-cart .wc-block-grid__products {
-        gap: 14px !important;
-        padding-right: 18px !important;
-    }
-
-    body.woocommerce-cart .wc-block-grid__product {
-        flex: 0 0 78% !important;
-        width: 78% !important;
-    }
-
-}
-
 
 /* =========================================================
    REMOVE HORIZONTAL PAGE OVERFLOW
@@ -4861,871 +2819,1262 @@ body.woocommerce-cart main {
     overflow-x: hidden !important;
 }
 
-/* =========================================================
-   RANIVASTRA — CART EMPTY PAGE
-   FULL WIDTH LAYOUT FIX
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   1. EMPTY CART MAIN BLOCK
-   This is the actual parent from your HTML
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-
-    padding: 0 5vw 100px !important;
-
-    box-sizing: border-box !important;
+/* ============ ABOUT US — VALUES GRID ============ */
+.rv-value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
 }
 
-
-/* ---------------------------------------------------------
-   2. EMPTY CART TITLE
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-cart__empty-cart__title {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin: 80px 0 20px !important;
-
-    padding: 0 !important;
-
-    text-align: center !important;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif !important;
-
-    font-size:
-        clamp(42px, 5vw, 70px) !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1 !important;
-
-    letter-spacing: -.04em !important;
-
-    color: var(--rv-text, #171717) !important;
-}
-
-
-/* ---------------------------------------------------------
-   3. SEPARATOR
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wp-block-separator {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin: 75px 0 65px !important;
-}
-
-
-/* ---------------------------------------------------------
-   4. NEW IN STORE HEADING
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-> h2:not(.wc-block-cart__empty-cart__title) {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 0 35px !important;
-
-    padding: 0 !important;
-
-    text-align: left !important;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif !important;
-
-    font-size:
-        clamp(34px, 4vw, 52px) !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.05 !important;
-
-    letter-spacing: -.035em !important;
-
-    color: var(--rv-text, #171717) !important;
-}
-
-
-/* ---------------------------------------------------------
-   5. PRODUCT SECTION
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* ---------------------------------------------------------
-   6. PRODUCT TRACK
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__products {
-
-    display: flex !important;
-
-    flex-wrap: nowrap !important;
-
-    justify-content: flex-start !important;
-
-    align-items: flex-start !important;
-
-    gap: 20px !important;
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-
-    padding: 0 0 15px !important;
-
-    overflow-x: auto !important;
-
-    overflow-y: hidden !important;
-
-    list-style: none !important;
-
-    box-sizing: border-box !important;
-
-    scrollbar-width: none !important;
-
-    -webkit-overflow-scrolling: touch !important;
-
-    cursor: grab;
-
-    user-select: none;
-
-    touch-action: pan-x !important;
-}
-
-
-/* Hide scrollbar */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__products::-webkit-scrollbar {
-
-    display: none !important;
-
-    width: 0 !important;
-
-    height: 0 !important;
-}
-
-
-/* ---------------------------------------------------------
-   7. PRODUCT CARDS
-   --------------------------------------------------------- */
-
-/* Desktop = 4 cards visible */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product {
-
-    flex:
-        0 0
-        calc((100% - 60px) / 4) !important;
-
-    width:
-        calc((100% - 60px) / 4) !important;
-
-    max-width: none !important;
-
-    min-width: 0 !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    border: 0 !important;
-
-    box-sizing: border-box !important;
-
-    text-align: left !important;
-}
-
-
-/* ---------------------------------------------------------
-   8. PRODUCT IMAGE
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-image {
-
-    width: 100% !important;
-
-    height: auto !important;
-
-    aspect-ratio: 3 / 4 !important;
-
-    margin: 0 0 16px !important;
-
-    padding: 0 !important;
-
-    overflow: hidden !important;
-
-    background: #f3f0ed !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-image img {
-
-    display: block !important;
-
-    width: 100% !important;
-
-    height: 100% !important;
-
-    max-width: none !important;
-
-    margin: 0 !important;
-
-    object-fit: cover !important;
-
-    transition:
-        transform .7s cubic-bezier(.2,.65,.2,1) !important;
-}
-
-
-/* Image hover */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product:hover
-.wc-block-grid__product-image img {
-
-    transform: scale(1.045) !important;
-}
-
-
-/* ---------------------------------------------------------
-   9. SALE BADGE
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-onsale {
-
-    position: absolute !important;
-
-    top: 12px !important;
-
-    left: 12px !important;
-
-    z-index: 5 !important;
-
-    padding: 7px 10px !important;
-
-    margin: 0 !important;
-
-    background: #fff !important;
-
-    color: #111 !important;
-
-    border: 0 !important;
-
-    border-radius: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 9px !important;
-
-    font-weight: 600 !important;
-
-    letter-spacing: .12em !important;
-
-    text-transform: uppercase !important;
-}
-
-
-/* ---------------------------------------------------------
-   10. PRODUCT TITLE
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-title {
-
-    min-height: 40px !important;
-
-    margin: 0 0 7px !important;
-
-    padding: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 14px !important;
-
-    font-weight: 500 !important;
-
-    line-height: 1.4 !important;
-
-    color: var(--rv-text, #171717) !important;
-
-    text-align: left !important;
-}
-
-
-/* ---------------------------------------------------------
-   11. PRICE
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-price {
-
-    min-height: 22px !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 13px !important;
-
-    line-height: 1.5 !important;
-
-    color: var(--rv-muted, #777) !important;
-
-    text-align: left !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-price del {
-
-    opacity: .55 !important;
-
-    margin-right: 5px !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-price ins {
-
-    color: var(--rv-text, #171717) !important;
-
-    text-decoration: none !important;
-
-    font-weight: 500 !important;
-}
-
-
-/* ---------------------------------------------------------
-   12. ADD TO CART BUTTON
-   --------------------------------------------------------- */
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-add-to-cart {
-
-    width: 100% !important;
-
-    margin: 14px 0 0 !important;
-
-    padding: 0 !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-add-to-cart
-.wp-block-button {
-
-    width: 100% !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link {
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: space-between !important;
-
-    width: 100% !important;
-
-    min-height: 46px !important;
-
-    margin: 0 !important;
-
-    padding: 0 14px 0 16px !important;
-
-    background: var(--rv-dark, #171717) !important;
-
-    color: #fff !important;
-
-    border: 1px solid var(--rv-dark, #171717) !important;
-
-    border-radius: 0 !important;
-
-    font-family: Arial, Helvetica, sans-serif !important;
-
-    font-size: 10px !important;
-
-    font-weight: 600 !important;
-
-    letter-spacing: .12em !important;
-
-    text-transform: uppercase !important;
-
-    box-sizing: border-box !important;
-
-    transition:
-        all .4s cubic-bezier(.2,.65,.2,1) !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link::after {
-
-    content: "→" !important;
-
-    font-size: 15px !important;
-
-    margin-left: 12px !important;
-
-    transition:
-        transform .4s ease !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link:hover {
-
-    background: transparent !important;
-
-    color: var(--rv-dark, #171717) !important;
-
-    border-color: var(--rv-dark, #171717) !important;
-
-    transform: translateY(-2px) !important;
-}
-
-
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid__product-add-to-cart
-.wp-block-button__link:hover::after {
-
-    transform: translateX(5px) !important;
-}
-
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block {
-
-        padding-left: 24px !important;
-
-        padding-right: 24px !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wc-block-grid__product {
-
-        flex-basis:
-            calc((100% - 40px) / 3) !important;
-
-        width:
-            calc((100% - 40px) / 3) !important;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 767px) {
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block {
-
-        padding-left: 18px !important;
-
-        padding-right: 0 !important;
-
-        padding-bottom: 70px !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wc-block-cart__empty-cart__title {
-
-        margin-top: 60px !important;
-
-        padding-right: 18px !important;
-
-        font-size:
-            clamp(38px, 11vw, 54px) !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wp-block-separator {
-
-        width:
-            calc(100% - 18px) !important;
-
-        margin:
-            55px 0 45px !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    > h2:not(.wc-block-cart__empty-cart__title) {
-
-        padding-right: 18px !important;
-
-        margin-bottom: 25px !important;
-
-        font-size:
-            clamp(32px, 10vw, 44px) !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wc-block-grid__products {
-
-        gap: 14px !important;
-
-        padding-right: 18px !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wc-block-grid__product {
-
-        flex:
-            0 0 78% !important;
-
-        width: 78% !important;
-    }
-
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wc-block-grid__product-title {
-
-        font-size: 13px !important;
-
-        min-height: 38px !important;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 480px) {
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-empty-cart-block
-    .wc-block-grid__product {
-
-        flex:
-            0 0 82% !important;
-
-        width: 82% !important;
-    }
-
-}
-
-/* =========================================================
-   RANIVASTRA — CART PAGE
-   FORCE CONTENT TO USE FULL MAX CONTAINER
-   ========================================================= */
-
-/* Cart page outer content */
-body.woocommerce-cart .entry-content,
-body.woocommerce-cart .wp-site-blocks,
-body.woocommerce-cart .is-layout-constrained,
-body.woocommerce-cart .wp-block-post-content {
-    width: 100% !important;
-    max-width: none !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-
-/* Cart page content container */
-body.woocommerce-cart
-.wp-block-woocommerce-cart {
-
-    width: 100% !important;
-    max-width: var(--wp--style--global--wide-size, 1400px) !important;
-
-    margin-left: auto !important;
-    margin-right: auto !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* Empty cart content */
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* Product recommendation */
-body.woocommerce-cart
-.wp-block-woocommerce-empty-cart-block
-.wc-block-grid {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    box-sizing: border-box !important;
-}
-
-
-/* =========================================================
-   FILLED CART
-   ========================================================= */
-
-body.woocommerce-cart
-.wc-block-components-sidebar-layout {
-
-    width: 100% !important;
-
-    max-width: none !important;
-
-    margin-left: auto !important;
-    margin-right: auto !important;
-
-    box-sizing: border-box !important;
-}
-
-
-body.woocommerce-cart
-.wc-block-cart-items {
-
-    width: 100% !important;
-
-    max-width: none !important;
-}
-
-
-/* =========================================================
-   RESPONSIVE SIDE SPACING
-   ========================================================= */
-
-@media (min-width: 1400px) {
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-cart {
-
-        padding-left: 40px !important;
-        padding-right: 40px !important;
-    }
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1399px) {
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-cart {
-
-        padding-left: 30px !important;
-        padding-right: 30px !important;
-    }
-
-}
-
-
-@media (max-width: 767px) {
-
-    body.woocommerce-cart
-    .wp-block-woocommerce-cart {
-
-        padding-left: 18px !important;
-        padding-right: 18px !important;
-    }
-
-}
-/* =========================================================
-   RANIVASTRA — EMPTY CART
-   REDUCE ICON + TITLE SIZE
-   ========================================================= */
-
-/* Empty cart icon */
-.woocommerce-cart .wc-block-cart__empty-cart__title::before {
-    font-size: 28px !important;
-}
-
-/* Empty cart title */
-.woocommerce-cart .wc-block-cart__empty-cart__title {
-    font-size: clamp(24px, 3vw, 30px) !important;
-}
-/* =========================================================
-   RANIVASTRA — REMOVE SALE BADGE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__product-onsale {
-    display: none !important;
-}
-/* =========================================================
-   RANIVASTRA — YOU MAY LIKE
-   ========================================================= */
-
-.woocommerce-cart .wc-block-grid__heading {
-    text-align: center !important;
-    width: 100% !important;
-}
-
-/* =========================================================
-   RANIVASTRA — YOU MAY LIKE HEADING
-   ========================================================= */
-
-.woocommerce-cart .wp-block-heading.has-text-align-center {
-    text-align: center !important;
-    width: 100% !important;
-}
-/* Turn "New in store" grid into a horizontal sliding carousel */
-.woocommerce-cart .products {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 20px;
-    padding: 10px 10px 25px 10px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: #333 #eee;
-}
-
-.woocommerce-cart .products::-webkit-scrollbar {
-    height: 6px;
-}
-.woocommerce-cart .products::-webkit-scrollbar-thumb {
-    background: #333;
+.rv-value-card {
+    background: #faf7f2;
+    border: 1px solid #e7e0d8;
     border-radius: 10px;
+    padding: 32px 26px;
+    transition: transform .35s ease, box-shadow .35s ease;
 }
 
-.woocommerce-cart .products li.product {
-    flex: 0 0 220px !important;
-    max-width: 220px !important;
-    scroll-snap-align: start;
+.rv-value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(0,0,0,.08);
+}
+
+.rv-value-number {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .08em;
+    color: #a77b68;
+    margin-bottom: 14px;
+}
+
+.rv-value-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.rv-value-card p {
+    font-size: 14.5px;
+    color: #5c564f;
+    line-height: 1.6;
+}
+
+/* ============ CONTACT US — CARDS ============ */
+.rv-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+}
+
+.rv-contact-card {
+    background: #fff;
+    border: 1px solid #e7e0d8;
+    border-radius: 10px;
+    padding: 34px 28px;
     text-align: center;
-}
-.woo-cart-slider-wrapper {
-    position: relative;
-    padding: 0 45px;
+    transition: transform .35s ease, box-shadow .35s ease;
 }
 
-.woo-slider-arrow {
+.rv-contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(0,0,0,.08);
+}
+
+.rv-contact-icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.rv-contact-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rv-contact-card p {
+    font-size: 14.5px;
+    color: #5c564f;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+/* ============================================
+   RV BUTTON — BLACK FILL SWEEP + TEXT INVERT
+   ============================================ */
+.rv-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color .45s ease;
+}
+
+.rv-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s cubic-bezier(.65,0,.35,1);
+    z-index: -1;
+}
+
+.rv-btn:hover::before {
+    transform: scaleX(1);
+}
+
+.rv-btn:hover {
+    color: #fff !important;
+    border-color: #000 !important;
+}
+
+/* If a button is already solid black (rv-btn-dark), swap the sweep to a lighter tone for contrast */
+.rv-btn-dark::before {
+    background: #a77b68;
+}
+
+.rv-btn-dark:hover {
+    color: #fff !important;
+}
+
+
+/* ============================================
+   RV BUTTON — SHINE SWEEP ON TOP OF FILL
+   ============================================ */
+.rv-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,.55) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    transform: skewX(-20deg);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.rv-btn:hover::after {
+    animation: rv-btn-shine .9s ease forwards;
+}
+
+@keyframes rv-btn-shine {
+    0%   { left: -60%; opacity: 0; }
+    15%  { opacity: 1; }
+    100% { left: 130%; opacity: 0; }
+}
+
+
+/* ============================================
+   IMAGE SHINE SWEEP ON HOVER
+   Applies to hero, story, product & contact images
+   ============================================ */
+.rv-hero-media,
+.rv-story-media,
+.rv-product-media,
+.rv-image-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.rv-hero-media::after,
+.rv-story-media::after,
+.rv-product-media::after,
+.rv-image-reveal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,.4) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    transform: skewX(-20deg);
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+}
+
+.rv-hero-media:hover::after,
+.rv-story-media:hover::after,
+.rv-product-media:hover::after,
+.rv-image-reveal:hover::after {
+    animation: rv-img-shine 1s ease forwards;
+}
+
+@keyframes rv-img-shine {
+    0%   { left: -75%; opacity: 0; }
+    15%  { opacity: 1; }
+    100% { left: 130%; opacity: 0; }
+}
+.rv-contact-icon-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #25D366;
+}
+
+.rv-contact-icon-whatsapp svg {
+    width: 30px;
+    height: 30px;
+}
+
+.rv-about-carousel-wrapper {
+    position: relative;
+    padding: 0 44px;
+    margin-top: 10px;
+}
+
+.rv-about-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.rv-about-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.rv-about-carousel-item {
+    flex: 0 0 220px;
+    max-width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.rv-about-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rv-about-arrow {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
     width: 38px;
     height: 38px;
-    background: #000;
+    background: #211e1c;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 10;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 4px;
     user-select: none;
-    transition: background 0.2s;
+    transition: background .25s ease;
 }
 
-.woo-slider-arrow:hover {
-    background: #444;
+.rv-about-arrow:hover {
+    background: #a77b68;
 }
 
-.woo-slider-arrow.prev { left: 0; }
-.woo-slider-arrow.next { right: 0; }
+.rv-about-arrow-prev { left: 0; }
+.rv-about-arrow-next { right: 0; }
+
+/* ============ POLICY PAGES ============ */
+
+.rv-policy-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #a77b68;
+    z-index: 9999;
+    transition: width .1s linear;
+}
+
+.rv-policy-updated {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 13px;
+    letter-spacing: .04em;
+    color: #8a8377;
+    border: 1px solid #e7e0d8;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+.rv-policy-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 50px;
+}
+
+@media (max-width: 860px) {
+    .rv-policy-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rv-policy-toc {
+    position: sticky;
+    top: 100px;
+    border-left: 2px solid #e7e0d8;
+    padding-left: 20px;
+}
+
+.rv-policy-toc-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #a77b68;
+    margin-bottom: 14px;
+}
+
+.rv-policy-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rv-policy-toc li {
+    margin-bottom: 12px;
+}
+
+.rv-policy-toc a {
+    font-size: 14px;
+    color: #5c564f;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+
+.rv-policy-toc a:hover,
+.rv-policy-toc a.rv-policy-toc-active {
+    color: #a77b68;
+    font-weight: 600;
+}
+
+.rv-policy-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rv-policy-card {
+    display: flex;
+    gap: 20px;
+    background: #faf7f2;
+    border: 1px solid #e7e0d8;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform .4s ease, box-shadow .4s ease, opacity .5s ease, translate .5s ease;
+}
+
+.rv-policy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 34px rgba(0,0,0,.07);
+}
+
+.rv-policy-card-icon {
+    flex: 0 0 auto;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #e7e0d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a77b68;
+}
+
+.rv-policy-card-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.rv-policy-card-body h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.rv-policy-card-body p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #5c564f;
+    margin: 0;
+}
+
+/* ============ HEADER ICON ACTIONS ============ */
+
+.rv-head-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.rv-icon-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: #211e1c;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease;
+}
+
+.rv-icon-btn:hover {
+    background: #f2ece3;
+    color: #a77b68;
+}
+
+.rv-icon-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.rv-cart-count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #a77b68;
+    color: #fff;
+    font-size: 10px;
+    line-height: 1;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3px;
+}
+
+/* ============ SEARCH OVERLAY ============ */
+
+.rv-search-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20,17,15,.55);
+    z-index: 9998;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 12vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+
+.rv-search-overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.rv-search-box {
+    background: #fff;
+    width: 90%;
+    max-width: 560px;
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transform: translateY(-16px);
+    transition: transform .3s ease;
+}
+
+.rv-search-overlay.is-active .rv-search-box {
+    transform: translateY(0);
+}
+
+.rv-search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.rv-search-form input[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 4px;
+    background: transparent;
+}
+
+.rv-search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a77b68;
+    display: flex;
+}
+
+.rv-search-form button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.rv-search-close {
+    background: none;
+    border: none;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    color: #8a8377;
+}
+
+.rv-icon-btn[data-rv-wishlist] {
+    position: relative;
+}
+
+.rv-icon-btn[data-rv-wishlist]::after {
+    content: "Wishlist coming soon";
+    position: absolute;
+    top: 46px;
+    right: 0;
+    background: #211e1c;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition: opacity .25s ease, transform .25s ease;
+}
+
+.rv-icon-btn[data-rv-wishlist]:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============ ACCOUNT PAGE — CENTERED FLIP CARD ============ */
+
+.woocommerce-account .rv-container {
+    display: flex;
+    justify-content: center;
+}
+
+.woocommerce-account .woocommerce {
+    max-width: 440px;
+    width: 100%;
+    margin: 60px 0;
+}
+
+.rv-auth-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+.rv-auth-tab {
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #8a8377;
+    transition: background .25s ease, color .25s ease;
+}
+
+.rv-auth-tab.is-active {
+    background: #211e1c;
+    color: #fff;
+}
+
+/* --- Flip mechanics --- */
+
+.rv-flip-container {
+    perspective: 1600px;
+}
+
+.rv-flip-inner {
+    position: relative;
+    width: 100%;
+    transition: transform .7s cubic-bezier(.4,.2,.2,1), min-height .3s ease;
+    transform-style: preserve-3d;
+}
+
+.rv-flip-container.is-flipped .rv-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.rv-flip-front,
+.rv-flip-back {
+    backface-visibility: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #e7e0d8;
+    padding: 40px 34px;
+}
+
+.rv-flip-front {
+    position: relative;
+}
+
+.rv-flip-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.woocommerce-account .u-column1 h2,
+.woocommerce-account .u-column2 h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.woocommerce-account .woocommerce-form-row,
+.woocommerce-account .form-row {
+    margin-bottom: 20px;
+}
+
+.woocommerce-account .woocommerce-form label {
+    display: block;
+    font-size: 13px;
+    color: #5c564f;
+    margin-bottom: 6px;
+}
+
+.woocommerce-account .woocommerce-form input.input-text,
+.woocommerce-account .woocommerce-form input[type="text"],
+.woocommerce-account .woocommerce-form input[type="password"],
+.woocommerce-account .woocommerce-form input[type="email"] {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #e7e0d8;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fff;
+    box-sizing: border-box;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.woocommerce-account .woocommerce-form input:focus {
+    outline: none;
+    border-color: #a77b68;
+    box-shadow: 0 0 0 3px rgba(167,123,104,.15);
+}
+
+.woocommerce-account .woocommerce-form-login__rememberme {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: #5c564f;
+}
+
+.woocommerce-account .woocommerce-form button[type="submit"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #211e1c;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .02em;
+    cursor: pointer;
+    transition: transform .25s ease, background .25s ease;
+}
+
+.woocommerce-account .woocommerce-form button[type="submit"]:hover {
+    background: #a77b68;
+    transform: translateY(-2px);
+}
+
+.woocommerce-account .woocommerce-LostPassword {
+    margin-top: 16px;
+    font-size: 13.5px;
+    text-align: center;
+}
+
+.woocommerce-account .woocommerce-LostPassword a {
+    color: #a77b68;
+    text-decoration: none;
+}
+
+.woocommerce-account .woocommerce-LostPassword a:hover {
+    text-decoration: underline;
+}
+
+.woocommerce-account .woocommerce-privacy-policy-text {
+    font-size: 12.5px;
+    color: #8a8377;
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+/* ============ FORCE-CENTER ACCOUNT PAGE ============ */
+
+body.woocommerce-account .rv-page-header {
+    display: block;
+    width: 100%;
+    float: none;
+}
+
+body.woocommerce-account .rv-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: none !important;
+    display: block;
+}
+
+body.woocommerce-account .woocommerce {
+    max-width: 440px;
+    width: 100%;
+    margin: 50px auto 0 !important;
+    float: none !important;
+}
+
+body.woocommerce-account .rv-auth-tabs {
+    width: 100%;
+    margin: 0 auto 26px;
+}
+
+/* ============ PREMIUM PRICE STYLING ============ */
+
+.rv-product-price,
+.woocommerce ul.products li.product .price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.rv-product-price del,
+.woocommerce ul.products li.product .price del {
+    font-size: 13px;
+    color: #a39c90;
+    opacity: 1;
+    text-decoration: line-through;
+}
+
+.rv-product-price ins,
+.woocommerce ul.products li.product .price ins {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    color: #a2452f;
+}
+
+/* ============ BUY NOW BUTTON — PROPER LAYOUT, NO CONFLICTS ============ */
+
+.rv-buy-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/* ============ PURCHASE BUTTONS — CONSISTENT PREMIUM PAIRING ============ */
+
+.rv-purchase-area .rv-buy-now-btn,
+.rv-purchase-area .single_add_to_cart_button {
+    border-radius: 8px !important;
+    padding: 16px 24px !important;
+    font-size: 15px !important;
+    letter-spacing: .02em;
+}
+
+.rv-purchase-area .single_add_to_cart_button {
+    background: #fff !important;
+    color: #211e1c !important;
+    border: 1.5px solid #211e1c !important;
+    width: 100%;
+    margin-top: 14px;
+    transition: background .3s ease, color .3s ease, border-color .3s ease;
+}
+
+.rv-purchase-area .single_add_to_cart_button:hover {
+    background: #211e1c !important;
+    color: #fff !important;
+}
+
+/* ============ PRODUCT PAGE — KICKER, TAGLINE, PRICE BOX ============ */
+
+.rv-product-kicker {
+    font-size: 12px;
+    letter-spacing: .14em;
+    color: #a77b68;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.rv-product-kicker::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background: #d9c9b8;
+}
+
+.rv-product-tagline {
+    font-style: italic;
+    color: #8a6151;
+    font-size: 16px;
+    margin: 6px 0 20px;
+}
+
+.rv-price-box {
+    background: #faf3ec;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 18px;
+}
+
+.rv-price-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.rv-price-regular {
+    text-decoration: line-through;
+    color: #a39c90;
+    font-size: 15px;
+}
+
+.rv-price-percent {
+    background: #211e1c;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+.rv-price-sale {
+    font-size: 30px;
+    font-weight: 700;
+    color: #211e1c;
+}
+
+.rv-price-tax-note {
+    font-size: 12px;
+    color: #8a8377;
+    margin-top: 4px;
+}
+
+
+/* ============ FEATURE PILLS ============ */
+
+.rv-feature-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.rv-feature-pill {
+    background: #fff;
+    border: 1px solid #e7e0d8;
+    color: #5c564f;
+    font-size: 12.5px;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+
+
+/* ============ SIDE-BY-SIDE PURCHASE BUTTONS ============ */
+
+.rv-purchase-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.rv-purchase-buttons .single_add_to_cart_button,
+.rv-purchase-buttons .rv-buy-now-btn {
+    width: 100%;
+    margin: 0;
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-size: 14.5px;
+}
+
+.rv-purchase-buttons .single_add_to_cart_button {
+    background: #fff !important;
+    color: #211e1c !important;
+    border: 1.5px solid #211e1c !important;
+    transition: background .3s ease, color .3s ease;
+}
+
+.rv-purchase-buttons .single_add_to_cart_button:hover {
+    background: #211e1c !important;
+    color: #fff !important;
+}
+
+
+/* ============ TRUST BADGES ============ */
+
+.rv-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #e7e0d8;
+}
+
+.rv-trust-badge {
+    font-size: 12px;
+    color: #5c564f;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rv-trust-badge::before {
+    content: "✓";
+    color: #6b8f5e;
+    font-weight: 700;
+}
+
+/* ============ PRODUCT PAGE IMAGE — ADJUST THESE NUMBERS ============ */
+
+:root {
+    --rv-product-image-max-width: 500px;   /* how wide the main image area is */
+    --rv-product-image-ratio: 4 / 6;        /* width / height shape — try 1/1 for square, 4/5, 3/4, etc. */
+    --rv-product-image-radius: 20px;         /* corner roundness */
+}
+
+.woocommerce div.product div.images {
+    max-width: var(--rv-product-image-max-width);
+    margin: 0 auto;   /* centers the whole gallery block */
+}
+
+.woocommerce div.product div.images img {
+    width: 100%;
+    aspect-ratio: var(--rv-product-image-ratio);
+    height: auto;
+    object-fit: cover;          /* "cover" = fills and crops, "contain" = shows whole image with empty space */
+    object-position: top center; /* which part of the image stays visible when cropped: top/center/bottom */
+    border-radius: var(--rv-product-image-radius);
+    display: block;
+}
+
+.woocommerce-pagination {
+    display: none !important;
+}
+
+.rv-infinite-loader {
+    text-align: center;
+    padding: 30px 0;
+    color: #a77b68;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    display: none;
+}
+
+.rv-infinite-loader.is-active {
+    display: block;
+}
+
+.rv-shop-hero {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    margin-bottom: 30px;
+}
+
+.rv-shop-hero-content h1 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.rv-shop-breadcrumb {
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+}
+
+.rv-shop-breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rv-shop-breadcrumb span {
+    margin: 0 6px;
+}
+
+/* ============ ADJUST: DISCOUNT BADGE POSITION & SIZE ============ */
+
+:root {
+    --rv-discount-top: 12px;      /* distance from top of image */
+    --rv-discount-right: 12px;    /* distance from right of image */
+    --rv-discount-fontsize: 8px; /* text size */
+    --rv-discount-padding: 4px 7px; /* top/bottom  left/right spacing inside the badge */
+    --rv-discount-radius: 6px;    /* corner roundness */
+}
+
+.rv-discount-badge {
+    position: absolute;
+    top: var(--rv-discount-top);
+    right: var(--rv-discount-right);
+    font-size: var(--rv-discount-fontsize);
+    padding: var(--rv-discount-padding);
+    border-radius: var(--rv-discount-radius);
+    background: #8a2e2e;
+    color: #fff;
+    font-weight: 700;
+    z-index: 5;
+    box-shadow: 0 4px 10px rgba(138,46,46,.35);
+}
+
+.rv-product-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: #211e1c;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    line-height: 1.4;
+    border-radius: 6px;
+    z-index: 5;
+}
+
+
+/* ============ ADJUST: HEART ICON POSITION & SIZE ============ */
+
+:root {
+    --rv-heart-top: 240px;      /* distance from top of image */
+    --rv-heart-right: 8px;    /* distance from right of image */
+    --rv-heart-size: 30px;     /* circle diameter */
+    --rv-heart-icon-size: 12px; /* heart symbol size inside the circle */
+}
+
+article.rv-product-card a.tinvwl_add_to_wishlist_button,
+.woocommerce ul.products li.product a.tinvwl_add_to_wishlist_button {
+    position: absolute !important;
+    top: var(--rv-heart-top) !important;
+    right: var(--rv-heart-right) !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: var(--rv-heart-size) !important;
+    height: var(--rv-heart-size) !important;
+    background-color: rgba(33,30,28,.55) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: var(--rv-heart-icon-size) var(--rv-heart-icon-size) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+    color: transparent !important;
+    z-index: 6;
+}
+
+.rv-product-media a.tinvwl_add_to_wishlist_button::before,
+a.woocommerce-loop-product__link a.tinvwl_add_to_wishlist_button::before {
+    content: none !important;
+}
+
+.rv-product-media a.tinvwl_add_to_wishlist_button .tinvwl_add_to_wishlist-text,
+a.woocommerce-loop-product__link a.tinvwl_add_to_wishlist_button .tinvwl_add_to_wishlist-text {
+    display: none !important;
+}
+
+/* ============ UNIFIED IMAGE RATIO — CHANGE ONCE, APPLIES EVERYWHERE ============ */
+
+:root {
+    --rv-image-ratio: 4 / 5;       /* shape: 1/1 square, 4/5 slightly tall, 3/4 tall portrait */
+    --rv-image-position: top center; /* which part stays visible when cropped */
+}
+
+/* New Arrivals (home + page), Shop grid, Related products */
+.rv-product-media,
+.woocommerce ul.products li.product a img,
+.woocommerce ul.products li.product img {
+    aspect-ratio: var(--rv-image-ratio);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--rv-image-position);
+    display: block;
+}
+
+/* Single product page main image */
+.woocommerce div.product div.images,
+.woocommerce div.product div.images img {
+    aspect-ratio: var(--rv-image-ratio);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--rv-image-position);
+    border-radius: 8px;
+}
+
+/* ============ PRODUCT PAGE — LAYOUT + TYPOGRAPHY SYSTEM ============ */
+
+:root {
+    --rv-product-page-width: 1100px;
+    --rv-product-image-col: 440px;
+    --rv-grid-gap: 50px;
+
+    --rv-product-title-size: 32px;
+    --rv-product-desc-size: 14.5px;
+    --rv-price-size: 24px;
+
+    --rv-purchase-box-padding: 18px;
+    --rv-purchase-box-radius: 14px;
+
+    /* Consistent spacing scale — each element's gap to the next */
+    --rv-space-kicker: 10px;
+    --rv-space-title: 14px;
+    --rv-space-tagline: 22px;
+    --rv-space-desc: 28px;
+}
+
+.single-product .rv-single-product .rv-container {
+    max-width: var(--rv-product-page-width) !important;
+}
+
+.single-product .rv-single-grid {
+    grid-template-columns: minmax(0, var(--rv-product-image-col)) minmax(0, 1fr) !important;
+    gap: var(--rv-grid-gap) !important;
+    align-items: start !important;
+}
+
+.single-product .rv-single-media {
+    max-width: var(--rv-product-image-col) !important;
+}
+
+/* Kicker (category label) */
+.rv-product-kicker {
+    margin: 0 0 var(--rv-space-kicker) !important;
+}
+
+/* Title */
+.rv-single-summary .product_title {
+    font-size: var(--rv-product-title-size) !important;
+    line-height: 1.15 !important;
+    margin: 0 0 var(--rv-space-title) !important;
+}
+
+/* Tagline */
+.rv-product-tagline {
+    margin: 0 0 var(--rv-space-tagline) !important;
+    line-height: 1.4 !important;
+}
+
+/* Description */
+.rv-single-summary .woocommerce-product-details__short-description {
+    font-size: var(--rv-product-desc-size) !important;
+    line-height: 1.75 !important;
+    margin: 0 0 var(--rv-space-desc) !important;
+    max-width: 560px;
+}
+
+/* Price */
+.rv-price-sale {
+    font-size: var(--rv-price-size) !important;
+}
+
+/* Purchase / price box */
+.rv-purchase-area,
+.rv-price-box {
+    padding: var(--rv-purchase-box-padding) !important;
+    border-radius: var(--rv-purchase-box-radius) !important;
+}
+
+/* ============ TIGHTEN PURCHASE AREA SPACING ============ */
+
+:root {
+    --rv-purchase-gap: 8px;   /* space between price box / stock / quantity / buttons */
+}
+
+.rv-purchase-area {
+    padding: 14px !important;
+}
+
+/* ============ MATCH BUY NOW TO ADD TO CART STYLE ============ */
+
+.rv-purchase-buttons .rv-buy-now-btn,
+.rv-purchase-buttons .single_add_to_cart_button {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    letter-spacing: .02em !important;
+    text-transform: none !important;
+}
+
+.rv-price-box {
+    margin-bottom: var(--rv-purchase-gap) !important;
+    padding: 14px 16px !important;
+}
+
+.rv-stock {
+    margin-bottom: var(--rv-purchase-gap) !important;
+    font-size: 12px !important;
+}
+
+.rv-quantity-row {
+    margin-bottom: var(--rv-purchase-gap) !important;
+    padding: 8px 0 !important;
+}
+
+.rv-purchase-buttons {
+    margin-top: 0 !important;
+}
+
+.rv-purchase-buttons .single_add_to_cart_button,
+.rv-purchase-buttons .rv-buy-now-btn {
+    padding: 13px 16px !important;
+    font-size: 13.5px !important;
+}
+
+.rv-price-sale {
+    font-size: 22px !important;
+}
+
+.rv-price-row {
+    margin-bottom: 2px !important;
+}
