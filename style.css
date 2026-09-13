@@ -2156,42 +2156,58 @@ main,
    Premium Product Cards
    ========================================================= */
 
+/* =========================================================
+   RANIVASTRA HOME PRODUCT GRID — STABLE LAYOUT
+   Prevent product cards from collapsing the grid row
+   ========================================================= */
+
 .rv-home-product-grid {
-    align-items: stretch;
+    display: grid;
+    align-items: start;
+    grid-auto-rows: auto;
 }
 
 .rv-home-product-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-
-/* PRODUCT IMAGE */
-
-.rv-home-product-card .rv-product-media {
-    display: block;
     position: relative;
-    overflow: hidden;
-}
-
-.rv-home-product-card .rv-product-media img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-
-/* PRODUCT INFORMATION */
-
-.rv-home-product-card .rv-product-info {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    height: auto;
     min-height: 0;
 }
 
+.rv-home-product-card .rv-product-media {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #e9e1da;
+}
+
+.rv-home-product-card .rv-product-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rv-home-product-card .rv-product-info {
+    display: block;
+    flex: none;
+    min-height: 0;
+    height: auto;
+    padding: 14px 2px 18px;
+}
+
+.rv-home-product-card .rv-product-title {
+    min-height: 3.2em;
+    margin: 0 0 12px;
+    line-height: 1.45;
+}
+
+.rv-home-product-card .rv-product-price {
+    margin: 0 0 18px;
+}
 
 /* PRODUCT TITLE */
 
